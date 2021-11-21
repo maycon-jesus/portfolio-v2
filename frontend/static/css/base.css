@@ -1,0 +1,40 @@
+:root {
+  --primary: #d72323;
+  --background-gray: #121417;
+}
+
+body {
+  background-color: #060708;
+  font: 19px/23px Montserrat, "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.botao {
+  font-size: 20px;
+  background-color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.botao.large {
+  padding: 13px 22px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.background-gray {
+  background-color: var(--background-gray);
+}
