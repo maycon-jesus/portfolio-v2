@@ -54,7 +54,7 @@ section{
 .educacao{
   display: flex;
   flex-flow: row nowrap;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   background: var(--background-card);
   width: calc(50% - 15px);
