@@ -25,6 +25,11 @@
         </article>
       </div>
     </div>
+    <div class="veja-mais-div">
+      <nuxt-link class="botao mx-auto" to="/projetos">
+        Veja Mais
+      </nuxt-link>
+    </div>
   </section>
 </template>
 
@@ -82,5 +87,15 @@ section{
 
 .botoes{
   margin-top: 25px;
+}
+
+@media (max-width:1300px) {
+  .educacao{
+    width: 100%;
+  }
+
+  .educacao:not(:last-child){
+    margin-bottom: 30px;
+  }
 }
 </style>

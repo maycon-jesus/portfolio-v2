@@ -44,3 +44,14 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.veja-mais-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
