@@ -6,16 +6,16 @@
         <article class="educacao">
           <img class="logo" src="images/logos/ifmg.png" alt="Logo do IFMG">
           <div class="educacao-conteudo">
-            <h4>Instituto Federal de Minas Gerais</h4>
-            <h4>Ensino Médio e Técnico em Eletrotécnica</h4>
+            <h3>Instituto Federal de Minas Gerais</h3>
+            <h3>Ensino Médio e Técnico em Eletrotécnica</h3>
             <p>Fevereiro 2019 - Dezembro 2021</p>
           </div>
         </article>
         <article class="educacao">
           <img class="logo" src="images/logos/alura.jpg" alt="Logo da Alura">
           <div class="educacao-conteudo">
-            <h4>Alura</h4>
-            <h4>Diversos Cursos</h4>
+            <h3>Alura</h3>
+            <h3>Diversos Cursos</h3>
             <p>Novembro 2021 - Agora</p>
 
             <div class="botoes">
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="veja-mais-div">
-      <nuxt-link class="botao mx-auto" to="/projetos">
+      <nuxt-link class="botao mx-auto" to="/educacao">
         Veja Mais
       </nuxt-link>
     </div>
@@ -69,12 +69,12 @@ section{
   margin-left: 10px;
 }
 
-.educacao-conteudo h4{
+.educacao-conteudo h3{
   font-size: 26px;
   font-weight: bold;
 }
 
-.educacao-conteudo h4:nth-child(2){
+.educacao-conteudo h3:nth-child(2){
   margin-top: 7px;
   font-size: 20px;
 }

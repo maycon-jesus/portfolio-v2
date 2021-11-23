@@ -14,22 +14,22 @@
       </button>
       <ul>
         <li>
-          <nuxt-link to="#" class="link">
+          <nuxt-link to="/sobre" class="link">
             Sobre
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#" class="link">
-            Serviços
+          <nuxt-link to="/educacao" class="link">
+            Competências
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#" class="link">
-            Trabalhos
+          <nuxt-link to="/projetos" class="link">
+            Projetos
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#" class="botao link text-bold">
+          <nuxt-link to="/contato" class="botao link text-bold">
             Contato
           </nuxt-link>
         </li>
@@ -64,6 +64,7 @@ h1{
 
 nav{
   margin-left: auto;
+  z-index: 999;
 }
 
 nav ul{

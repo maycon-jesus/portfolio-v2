@@ -94,7 +94,7 @@
       </div>
     </div>
     <div class="veja-mais-div">
-      <nuxt-link class="botao mx-auto" to="/projetos">
+      <nuxt-link class="botao mx-auto" to="/educacao">
         Veja Mais
       </nuxt-link>
     </div>
