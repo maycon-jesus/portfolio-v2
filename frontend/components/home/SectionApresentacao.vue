@@ -56,7 +56,7 @@
           <nuxt-link to="/contato" class="botao onhover large">
             Fale Comigo
           </nuxt-link>
-          <a href="/cdn/curriculo.pdf" target="_blank" class="botao onhover large">Veja Meu Currículo</a>
+          <a href="/cdn/curriculo_compressed.pdf" target="_blank" class="botao onhover large">Veja Meu Currículo</a>
         </div>
       </article>
       <div class="imagem-apresentacao-div">
