@@ -3,15 +3,15 @@
     <Title title="Educação" />
     <div class="container py-0">
       <div class="educacao-list">
-        <article class="educacao">
+        <div class="educacao">
           <img class="logo" src="images/logos/ifmg.png" alt="Logo do IFMG">
           <div class="educacao-conteudo">
             <h3>Instituto Federal de Minas Gerais</h3>
             <h3>Ensino Médio e Técnico em Eletrotécnica</h3>
             <p>Fevereiro 2019 - Dezembro 2021</p>
           </div>
-        </article>
-        <article class="educacao">
+        </div>
+        <div class="educacao">
           <img class="logo" src="images/logos/alura.jpg" alt="Logo da Alura">
           <div class="educacao-conteudo">
             <h3>Alura</h3>
@@ -22,7 +22,7 @@
               <a href="https://cursos.alura.com.br/user/mayconjesus07/fullCertificate/747c169810b63f3dd8564e83e2ea8a78" target="_blank" class="botao">Visualizar Certificado</a>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
     <div class="veja-mais-div">
