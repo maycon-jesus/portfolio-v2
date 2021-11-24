@@ -105,11 +105,11 @@
         </div>
       </div>
     </div>
-    <div class="veja-mais-div">
+    <!-- <div class="veja-mais-div">
       <nuxt-link class="botao mx-auto" to="/projetos">
         Ver Todos
       </nuxt-link>
-    </div>
+    </div> -->
   </section>
 </template>
 
