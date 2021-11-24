@@ -130,6 +130,7 @@ section{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin-top: -15px;
 }
 
 .card-projeto{
@@ -140,6 +141,7 @@ section{
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
+  margin-top: 15px;
 }
 
 .card-projeto:nth-child(1n+1),
