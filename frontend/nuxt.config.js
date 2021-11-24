@@ -12,7 +12,18 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { property: 'og:description', content: 'Um desenvolvedor WEB Full Stack com experiência no desenvolvimento de websites com Javascript, Node.js, Vue.js e outras bibliotecas e frameworks interessantes.' },
+      { property: 'og:locale', content: 'pt_BR' },
+      { property: 'og:title', content: 'Maycon Jesus' },
+      { property: 'og:site_name', content: 'Maycon Jesus' },
+      { property: 'og:image', content: 'https://mayconjesus.com/images/imagem-apresentacao.png' },
+      { property: 'og:image:type', content: 'image/png' },
+      { property: 'og:image:width', content: '619' },
+      { property: 'og:image:height', content: '828' },
+      { property: 'og:type', content: 'website' },
+      { name: 'msapplication-TileColor', content: '#d72323' },
+      { name: 'theme-color', content: '#d72323' }
     ],
     link: [
       { rel: 'icon', type: 'image/jpg', href: '/favicon.jpg' },
