@@ -50,4 +50,16 @@ section{
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
+@media (max-width:1000px) {
+  .container{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .sobre-conteudo{
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
 </style>

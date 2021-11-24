@@ -1,5 +1,5 @@
 <template>
-  <section class="background-gray">
+  <section id="projetos" class="background-gray">
     <Title title="Projetos" description="Conheça alguns dos projetos desenvolvi" />
     <div class="container py-0">
       <div class="card-projeto">
@@ -121,7 +121,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section{
   padding: 50px 25px;
 }
@@ -142,6 +142,13 @@ section{
   display: flex;
   flex-flow: column;
   margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
 }
 
 .card-projeto:nth-child(1n+1),

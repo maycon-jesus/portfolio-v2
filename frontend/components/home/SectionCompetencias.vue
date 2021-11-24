@@ -1,5 +1,5 @@
 <template>
-  <section class="background-gray">
+  <section id="competencias" class="background-gray">
     <Title title="Competências" />
     <div class="competencias">
       <!-- Linguagens -->
@@ -124,12 +124,41 @@ section{
 .competencias{
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .competencia-list{
-  min-width: 300px;
+  width: 20%;
   padding: 25px;
+  box-sizing: border-box;
+}
+
+@media (max-width:1550px) {
+  .competencia-list{
+    width: 25%;
+  }
+}
+
+@media (max-width:1300px) {
+  .competencia-list{
+    width: 33.3%;
+  }
+}
+
+@media (max-width:1100px) {
+  .competencia-list{
+    width: 50%;
+  }
+}
+
+@media (max-width:780px) {
+  .competencias{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .competencia-list{
+    width: 80%;
+  }
 }
 
 .competencia-list h3{

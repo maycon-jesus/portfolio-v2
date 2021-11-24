@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1><span class="text-bold">Maycon</span> Jesus</h1>
+    <nuxt-link to="/" class="remove-style-link">
+      <h1><span class="text-bold">Maycon</span> Jesus</h1>
+    </nuxt-link>
     <button class="botao-abrir-menu" @click="navOpen=true">
       <svg viewBox="0 0 24 24">
         <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
@@ -14,22 +16,22 @@
       </button>
       <ul>
         <li>
-          <nuxt-link to="/sobre" class="link">
+          <nuxt-link to="#sobre" class="link">
             Sobre
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/educacao" class="link">
+          <nuxt-link to="#competencias" class="link">
             Competências
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/projetos" class="link">
+          <nuxt-link to="#projetos" class="link">
             Projetos
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contato" class="botao link text-bold">
+          <nuxt-link to="#apresentacao" class="botao link text-bold">
             Contato
           </nuxt-link>
         </li>
@@ -55,6 +57,15 @@ header{
   flex-flow: row nowrap;
   align-items: center;
   padding: 0 50px;
+  position: sticky;
+  top: 0px;
+  background-color: #060708;
+  z-index: 999;
+}
+
+.remove-style-link{
+  text-decoration: none;
+  color: inherit;
 }
 
 h1{
