@@ -75,6 +75,35 @@
           <a href="https://velloso.live" target="_blank" class="botao">Visitar Website</a>
         </div>
       </div>
+      <div class="card-projeto">
+        <img src="/images/projetos/stars-horizon-streamers.png" alt="Foto do projeto Stars Horizon - Streamers">
+        <h3>Stars Horizon - Streamers</h3>
+        <div class="techs-wrapper">
+          <div class="techs">
+            <p class="tech">
+              HTML 5
+            </p>
+            <p class="tech">
+              CSS 3
+            </p>
+            <p class="tech">
+              Vue.js
+            </p>
+            <p class="tech">
+              Nuxt.js
+            </p>
+            <p class="tech">
+              JavaScript
+            </p>
+          </div>
+        </div>
+        <p class="description">
+          Uma landing page para captação de novos streamers para compor o time de streamers da Stars Horizon.
+        </p>
+        <div class="botoes">
+          <a href="https://starshorizon.com.br/streamers" target="_blank" class="botao">Visitar Website</a>
+        </div>
+      </div>
     </div>
     <div class="veja-mais-div">
       <nuxt-link class="botao mx-auto" to="/projetos">
