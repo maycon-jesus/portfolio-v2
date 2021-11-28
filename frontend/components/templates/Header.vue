@@ -31,7 +31,7 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#apresentacao" class="botao link text-bold">
+          <nuxt-link to="/contato" class="botao link text-bold">
             Contato
           </nuxt-link>
         </li>
