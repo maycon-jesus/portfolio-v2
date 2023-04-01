@@ -10,7 +10,7 @@ class ThemePlugin {
     xl: 1888
   })
 
-  get current (): ITheme {
+  get current(): ITheme {
     return this.themeStore.currentTheme
   }
 

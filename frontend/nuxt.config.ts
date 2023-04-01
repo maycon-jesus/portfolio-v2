@@ -2,7 +2,7 @@ import {join} from "path"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  
+
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon'],
 
   css: ['~/assets/css/reset.css', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
@@ -48,5 +48,5 @@ export default defineNuxtConfig({
     dirs: [
       './composables/**'
     ]
-  },
+  }
 })

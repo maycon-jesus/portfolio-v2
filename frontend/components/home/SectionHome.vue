@@ -1,6 +1,11 @@
 <template>
-    <section id="#home" :class="{ mobile: isMobile }">
-        <div class="presentation">
+    <section id="home" :class="{ mobile: isMobile }">
+        <div
+            class="presentation"
+            :class="{
+                mobile: isMobile,
+            }"
+        >
             <h1
                 :class="{
                     'text-h2': !isMobile,

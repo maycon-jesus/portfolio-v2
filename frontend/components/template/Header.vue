@@ -5,17 +5,15 @@
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
-                <LazyTemplateHeaderMenuItem to="/"
-                    >Inicio</LazyTemplateHeaderMenuItem
+                <TemplateHeaderMenuItem to="/">Inicio</TemplateHeaderMenuItem>
+                <TemplateHeaderMenuItem to="/skills"
+                    >Sobre</TemplateHeaderMenuItem
                 >
-                <LazyTemplateHeaderMenuItem to="/skills"
-                    >Sobre</LazyTemplateHeaderMenuItem
+                <TemplateHeaderMenuItem to="/projetos"
+                    >Projetos</TemplateHeaderMenuItem
                 >
-                <LazyTemplateHeaderMenuItem to="/projetos"
-                    >Projetos</LazyTemplateHeaderMenuItem
-                >
-                <LazyTemplateHeaderMenuItem to="/contato"
-                    >Contato</LazyTemplateHeaderMenuItem
+                <TemplateHeaderMenuItem to="/contato"
+                    >Contato</TemplateHeaderMenuItem
                 >
             </div>
             <button v-if="!menuMobile" class="download-cv text-button">
@@ -41,17 +39,17 @@
                 }"
             >
                 <div class="links-mobile">
-                    <LazyTemplateHeaderMenuItem to="/"
-                        >Inicio</LazyTemplateHeaderMenuItem
+                    <TemplateHeaderMenuItem to="/"
+                        >Inicio</TemplateHeaderMenuItem
                     >
-                    <LazyTemplateHeaderMenuItem to="/skills"
-                        >Skills</LazyTemplateHeaderMenuItem
+                    <TemplateHeaderMenuItem to="/skills"
+                        >Skills</TemplateHeaderMenuItem
                     >
-                    <LazyTemplateHeaderMenuItem to="/projetos"
-                        >Projetos</LazyTemplateHeaderMenuItem
+                    <TemplateHeaderMenuItem to="/projetos"
+                        >Projetos</TemplateHeaderMenuItem
                     >
-                    <LazyTemplateHeaderMenuItem to="/contato"
-                        >Contato</LazyTemplateHeaderMenuItem
+                    <TemplateHeaderMenuItem to="/contato"
+                        >Contato</TemplateHeaderMenuItem
                     >
                     <button class="download-cv-mobile text-button">
                         Baixar CV
