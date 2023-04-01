@@ -1,0 +1,170 @@
+<template>
+    <header>
+        <img
+            class="logo"
+            src="~/assets/img/logos/maycon-jesus-small-dark.svg"
+        />
+
+        <!-- Desktop -->
+        <div class="links" v-if="!menuMobile">
+            <LazyTemplateHeaderMenuItem to="/"
+                >Inicio</LazyTemplateHeaderMenuItem
+            >
+            <LazyTemplateHeaderMenuItem to="/skills"
+                >Skills</LazyTemplateHeaderMenuItem
+            >
+            <LazyTemplateHeaderMenuItem to="/projetos"
+                >Projetos</LazyTemplateHeaderMenuItem
+            >
+            <LazyTemplateHeaderMenuItem to="/contato"
+                >Contato</LazyTemplateHeaderMenuItem
+            >
+        </div>
+        <button v-if="!menuMobile" class="download-cv text-button">
+            Download CV
+        </button>
+
+        <!-- MOBILE -->
+        <button v-if="menuMobile" class="menu-btn" @click="toggleDrawer">
+            <Icon
+                :name="
+                    drawerIsOpen
+                        ? 'solar:close-circle-bold-duotone'
+                        : 'solar:menu-dots-circle-bold-duotone'
+                "
+            ></Icon>
+        </button>
+        <MyExpandTransitionY
+            class="menu-mobile"
+            v-if="menuMobile"
+            v-model="drawerIsOpen"
+            :class="{
+                'menu-mobile-open': drawerIsOpen,
+            }"
+        >
+            <div class="links-mobile">
+                <LazyTemplateHeaderMenuItem to="/"
+                    >Inicio</LazyTemplateHeaderMenuItem
+                >
+                <LazyTemplateHeaderMenuItem to="/skills"
+                    >Skills</LazyTemplateHeaderMenuItem
+                >
+                <LazyTemplateHeaderMenuItem to="/projetos"
+                    >Projetos</LazyTemplateHeaderMenuItem
+                >
+                <LazyTemplateHeaderMenuItem to="/contato"
+                    >Contato</LazyTemplateHeaderMenuItem
+                >
+                <button class="download-cv-mobile text-button">
+                    Baixar CV
+                </button>
+            </div>
+        </MyExpandTransitionY>
+    </header>
+</template>
+
+<script setup>
+const drawerIsOpen = ref(false);
+
+const { $theme } = useNuxtApp();
+const menuMobile = $theme.breakpoints.smAndDown;
+
+const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
+</script>
+
+<style lang="scss" scoped>
+@import '~/assets/scss/themes.scss';
+
+header {
+    $spacingX: 15px;
+
+    position: fixed;
+    background-color: var(--background2);
+    left: $spacingX;
+    top: 8px;
+    width: calc(100% - $spacingX * 2);
+    border-radius: 29px;
+    padding: 10px;
+    min-height: 58px;
+    box-sizing: border-box;
+    color: var(--text-background2);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo {
+    margin-left: 15px;
+    height: 38px;
+}
+
+.links {
+    // Spacing
+    margin-left: auto;
+    margin-right: 5px;
+    align-self: center;
+
+    // Grid
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.download-cv {
+    border-radius: 999rem;
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+    transition: all 0.1s;
+    padding-inline: 15px;
+
+    &:hover {
+        background-color: var(--accent--35-opacity);
+        box-shadow: var(--accent--35-opacity) 0px 5px 15px;
+        color: var(--text-accent);
+    }
+}
+
+.download-cv-mobile {
+    border-radius: 999rem;
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+    transition: all 0.1s;
+    padding-inline: 15px;
+    height: 38px;
+    width: 100%;
+
+    &:hover {
+        background-color: var(--accent--35-opacity);
+        box-shadow: var(--accent--35-opacity) 0px 5px 15px;
+        color: var(--text-accent);
+    }
+}
+
+.menu-btn {
+    margin-left: auto;
+    background-color: transparent;
+    color: var(--text-background2);
+    padding: 0;
+    border: none;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    color: var(--text-background2);
+}
+
+.menu-mobile {
+    flex-basis: 100%;
+
+    &-open {
+        margin-top: 10px;
+    }
+
+    .links-mobile {
+        display: flex;
+        flex-flow: column;
+        gap: 5px;
+    }
+}
+</style>

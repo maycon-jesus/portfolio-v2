@@ -1,0 +1,36 @@
+@use "sass:color";
+$themes: dark, light;
+$teste: null;
+
+@each $theme in $themes{
+    .theme-#{$theme}{
+        @if $theme == dark {
+            --background: #060708;
+            --text-background: #fff;
+
+            --background2: #121417;
+            --text-background2: #fff;
+
+            --backgroundCard: #28292C;
+            --text-backgroundCard: #fff;
+            
+            --secondary: #F56217;
+            --text-secondary: #242424;
+
+            --accent: rgb(215, 35, 35);
+            --accent--35-opacity: rgba(215, 35, 35, .35);
+            --text-accent: #fff;
+        }
+
+        @if $theme ==light {
+            --background: #060708;
+            --textBackground: #fff;
+            --background2: #121417;
+            --textBackground2: #fff;
+            --backgroundCard: #28292C;
+            --textBackgroundCard: #fff;
+            --secondary: #F56217;
+            --accent: #D72323;
+        }
+    }
+}
