@@ -1,48 +1,10 @@
 <template>
-    <header>
-        <img
-            class="logo"
-            src="~/assets/img/logos/maycon-jesus-small-dark.svg"
-        />
+    <div class="header-wrapper">
+        <header>
+            <img class="logo" :src="logoUrl" />
 
-        <!-- Desktop -->
-        <div class="links" v-if="!menuMobile">
-            <LazyTemplateHeaderMenuItem to="/"
-                >Inicio</LazyTemplateHeaderMenuItem
-            >
-            <LazyTemplateHeaderMenuItem to="/skills"
-                >Skills</LazyTemplateHeaderMenuItem
-            >
-            <LazyTemplateHeaderMenuItem to="/projetos"
-                >Projetos</LazyTemplateHeaderMenuItem
-            >
-            <LazyTemplateHeaderMenuItem to="/contato"
-                >Contato</LazyTemplateHeaderMenuItem
-            >
-        </div>
-        <button v-if="!menuMobile" class="download-cv text-button">
-            Download CV
-        </button>
-
-        <!-- MOBILE -->
-        <button v-if="menuMobile" class="menu-btn" @click="toggleDrawer">
-            <Icon
-                :name="
-                    drawerIsOpen
-                        ? 'solar:close-circle-bold-duotone'
-                        : 'solar:menu-dots-circle-bold-duotone'
-                "
-            ></Icon>
-        </button>
-        <MyExpandTransitionY
-            class="menu-mobile"
-            v-if="menuMobile"
-            v-model="drawerIsOpen"
-            :class="{
-                'menu-mobile-open': drawerIsOpen,
-            }"
-        >
-            <div class="links-mobile">
+            <!-- Desktop -->
+            <div class="links" v-if="!menuMobile">
                 <LazyTemplateHeaderMenuItem to="/"
                     >Inicio</LazyTemplateHeaderMenuItem
                 >
@@ -55,12 +17,49 @@
                 <LazyTemplateHeaderMenuItem to="/contato"
                     >Contato</LazyTemplateHeaderMenuItem
                 >
-                <button class="download-cv-mobile text-button">
-                    Baixar CV
-                </button>
             </div>
-        </MyExpandTransitionY>
-    </header>
+            <button v-if="!menuMobile" class="download-cv text-button">
+                Download CV
+            </button>
+
+            <!-- MOBILE -->
+            <button v-if="menuMobile" class="menu-btn" @click="toggleDrawer">
+                <Icon
+                    :name="
+                        drawerIsOpen
+                            ? 'solar:close-circle-bold-duotone'
+                            : 'solar:menu-dots-circle-bold-duotone'
+                    "
+                ></Icon>
+            </button>
+            <MyExpandTransitionY
+                class="menu-mobile"
+                v-if="menuMobile"
+                v-model="drawerIsOpen"
+                :class="{
+                    'menu-mobile-open': drawerIsOpen,
+                }"
+            >
+                <div class="links-mobile">
+                    <LazyTemplateHeaderMenuItem to="/"
+                        >Inicio</LazyTemplateHeaderMenuItem
+                    >
+                    <LazyTemplateHeaderMenuItem to="/skills"
+                        >Skills</LazyTemplateHeaderMenuItem
+                    >
+                    <LazyTemplateHeaderMenuItem to="/projetos"
+                        >Projetos</LazyTemplateHeaderMenuItem
+                    >
+                    <LazyTemplateHeaderMenuItem to="/contato"
+                        >Contato</LazyTemplateHeaderMenuItem
+                    >
+                    <button class="download-cv-mobile text-button">
+                        Baixar CV
+                    </button>
+                </div>
+            </MyExpandTransitionY>
+        </header>
+    </div>
 </template>
 
 <script setup>
@@ -70,16 +69,30 @@ const { $theme } = useNuxtApp();
 const menuMobile = $theme.breakpoints.smAndDown;
 
 const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
+const logoUrl = computed(() => {
+    if ($theme.current.dark) {
+        if (menuMobile.value) return '/img/logos/maycon-jesus-small-dark.svg';
+        return '/img/logos/maycon-jesus-large-dark.svg';
+    } else {
+        if (menuMobile.value) return '/img/logos/maycon-jesus-small-light.svg';
+        return '/img/logos/maycon-jesus-large-light.svg';
+    }
+});
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/scss/themes.scss';
 
+.header-wrapper {
+    height: calc(58px + 16px);
+}
+
 header {
     $spacingX: 15px;
 
     position: fixed;
-    background-color: var(--background2);
+    background-color: var(--background2--80-opacity);
+    backdrop-filter: blur(5px);
     left: $spacingX;
     top: 8px;
     width: calc(100% - $spacingX * 2);

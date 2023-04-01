@@ -40,6 +40,7 @@ const props = defineProps({
 
     &-active {
         background-color: var(--accent);
+        color: var(--text-accent);
     }
 }
 </style>

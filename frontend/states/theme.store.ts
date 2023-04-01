@@ -3,8 +3,9 @@ import { defineStore } from 'pinia'
 type themesName = 'dark' | 'light'
 
 export interface ITheme {
-  name: themesName
-  cssClass: string
+  name: themesName,
+  cssClass: string,
+  dark: boolean
 }
 
 export const useThemeStore = defineStore('theme', {
@@ -17,11 +18,13 @@ export const useThemeStore = defineStore('theme', {
       themes: [
         {
           name: 'dark',
-          cssClass: 'theme-dark'
+          cssClass: 'theme-dark',
+          dark: true
         },
         {
           name: 'light',
-          cssClass: 'theme-light'
+          cssClass: 'theme-light',
+          dark: false
         }
       ]
     }
