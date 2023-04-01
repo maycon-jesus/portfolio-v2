@@ -75,6 +75,8 @@ section {
         .image {
             order: -1;
             margin-bottom: 24px;
+            margin-left: 0px;
+            margin-top: 15px;
 
             img {
                 height: 200px;
