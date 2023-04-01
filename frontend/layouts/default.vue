@@ -1,20 +1,35 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <nuxt />
-    </main>
-  </div>
+    <div class="layout-wrapper">
+        <TemplateHeader />
+        <main>
+            <slot />
+        </main>
+        <footer>ccc</footer>
+    </div>
 </template>
 
-<script>
-import Header from '../components/templates/Header.vue'
+<script setup>
+import { useUiStateStore } from '~~/states/uistate.store';
 
-export default {
-  components: { Header }
-}
+const { body } = useUiStateStore();
+
+useHead({
+    bodyAttrs: {
+        class: {
+            'hide-scroll': body.hideScroll,
+        },
+    },
+});
 </script>
 
-<style>
+<style scoped lang="scss">
+.layout-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
+    main {
+        flex-grow: 1;
+    }
+}
 </style>

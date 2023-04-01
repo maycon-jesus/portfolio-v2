@@ -1,0 +1,64 @@
+$fontFamilyNunitoSans: 'Nunito Sans', sans-serif;
+
+.text-button{
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-h1 {
+    font-weight: lighter;
+    font-size: 96px;
+    letter-spacing: -1.5px;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-h2 {
+    font-weight: lighter;
+    font-size: 60px;
+    letter-spacing: -0.5px;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-h3 {
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 0px;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-h5 {
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0px;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-h6 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    font-family: $fontFamilyNunitoSans;
+}
+
+.text-subtitle-1 {
+    font-weight: normal;
+    font-family: $fontFamilyNunitoSans;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+}
+
+.text-body-1{
+    font-weight: normal;
+    font-family: $fontFamilyNunitoSans;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.text-body-2 {
+    font-weight: normal;
+    font-family: $fontFamilyNunitoSans;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+}
