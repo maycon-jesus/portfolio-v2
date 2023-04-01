@@ -104,6 +104,7 @@ header {
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
+    z-index: 1000;
 }
 
 .logo {
