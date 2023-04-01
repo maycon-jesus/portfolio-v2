@@ -9,7 +9,7 @@
                     >Inicio</LazyTemplateHeaderMenuItem
                 >
                 <LazyTemplateHeaderMenuItem to="/skills"
-                    >Skills</LazyTemplateHeaderMenuItem
+                    >Sobre</LazyTemplateHeaderMenuItem
                 >
                 <LazyTemplateHeaderMenuItem to="/projetos"
                     >Projetos</LazyTemplateHeaderMenuItem
