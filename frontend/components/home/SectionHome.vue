@@ -50,6 +50,10 @@ section {
 
     p {
         max-width: 768px;
+
+        &:nth-child(n + 1) {
+            margin-top: 15px;
+        }
     }
 
     .image {
@@ -66,10 +70,6 @@ section {
         p {
             width: 100%;
             max-width: unset;
-
-            &:nth-child(n + 1) {
-                margin-top: 15px;
-            }
         }
 
         .image {
