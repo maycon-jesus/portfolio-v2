@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      titleTemplate: '%s - Maycon Jesus',
       link: [
         {
           rel: 'preconnect',

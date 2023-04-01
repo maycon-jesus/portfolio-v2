@@ -3,9 +3,7 @@
 </template>
 
 <script setup>
-import ExpandTransitionY from '~~/components/custom/ExpandTransitionY.vue';
-
-const a = ref(false);
-
-const teste = () => (a.value = !a.value);
+useHead({
+    titleTemplate: 'Maycon Jesus',
+});
 </script>
