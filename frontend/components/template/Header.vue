@@ -17,7 +17,12 @@
             </button>
 
             <!-- MOBILE -->
-            <button v-if="menuMobile" class="menu-btn" @click="toggleDrawer">
+            <button
+                v-if="menuMobile"
+                class="menu-btn"
+                @click="toggleDrawer"
+                :aria-label="drawerIsOpen ? 'Fechar menu' : 'Abrir menu'"
+            >
                 <Icon
                     :name="
                         drawerIsOpen
