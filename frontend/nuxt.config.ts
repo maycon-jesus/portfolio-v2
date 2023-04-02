@@ -8,7 +8,66 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      titleTemplate: '%s - Maycon Jesus',
+      // titleTemplate: '%s - Maycon Jesus',
+      title: 'Maycon Jesus',
+      meta: [
+        {
+          name: 'description',
+          content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
+        },
+        {
+          name: 'og:type',
+          content: 'website'
+        },
+        {
+          name: 'og:url',
+          content: 'https://mayconjesus.dev'
+        },
+        {
+          name: 'og:title',
+          content: 'Maycon Jesus - Programador front-end'
+        },
+         {
+          name: 'og:description',
+          content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
+        },
+        {
+          name: 'og:image',
+          content: 'https://mayconjesus.dev/img/home/eu.png'
+        },
+        {
+          name: 'og:image:type',
+          content: 'image/png'
+        },
+        {
+          name: 'og:image:width',
+          content: '253'
+        },
+        {
+          name: 'og:image:height',
+          content: '250'
+        },
+         {
+          name: 'og:image:alt',
+          content: 'Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja.'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          content: 'Maycon Jesus',
+        },
+        {
+          name: 'application-name',
+          content: 'Maycon Jesus'
+        },
+        {
+          name: 'msapplication-TileColor',
+          content: '#121417'
+        },
+        {
+          name: 'theme-color',
+          content: '#DC2F2F'
+        }
+      ],
       link: [
         {
           rel: 'preconnect',
@@ -21,7 +80,35 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap'
-        }
+        },
+
+        // Favicon
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/apple-touch-icon.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/favicon-32x32.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/favicon-16x16.png'
+        },
+        {
+          rel: 'manifest',
+          href: '/site.webmanifest'
+        },
+        {
+          rel: 'mask-icon',
+          href: '/safari-pinned-tab.svg',
+          color: '#1b263b'
+        },
       ]
     }
   },
