@@ -1,7 +1,7 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img class="logo" :src="logoUrl" />
+            <img class="logo" :src="logoUrl" alt="Logo Maycon Jesus" />
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">

@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: '%s - Maycon Jesus',
+      htmlAttrs: {
+        lang: 'pt-br'
+      },
       meta: [
         {
           name: 'description',
