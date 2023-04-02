@@ -1,7 +1,7 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img class="logo" :src="logoUrl" />
+            <img class="logo" :src="logoUrl" alt="Logo Maycon Jesus" />
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
@@ -17,7 +17,12 @@
             </button>
 
             <!-- MOBILE -->
-            <button v-if="menuMobile" class="menu-btn" @click="toggleDrawer">
+            <button
+                v-if="menuMobile"
+                class="menu-btn"
+                @click="toggleDrawer"
+                :aria-label="drawerIsOpen ? 'Fechar menu' : 'Abrir menu'"
+            >
                 <Icon
                     :name="
                         drawerIsOpen

@@ -26,7 +26,11 @@
             </p>
         </div>
         <div class="image">
-            <img src="/img/home/eu.png" alt="" />
+            <NuxtImg
+                src="/img/home/eu.png"
+                format="webp"
+                alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
+            ></NuxtImg>
         </div>
         <div v-if="!isMobile" class="icon-scroll"></div>
     </section>
