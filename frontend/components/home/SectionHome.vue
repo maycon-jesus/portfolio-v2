@@ -33,9 +33,9 @@
 </template>
 
 <script setup lang="ts">
-const { $theme } = useNuxtApp();
+const { $viewport } = useNuxtApp();
 
-const isMobile = $theme.breakpoints.smAndDown;
+const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
 
 <style lang="scss" scoped>
