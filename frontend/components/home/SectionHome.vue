@@ -16,7 +16,8 @@
             </h1>
             <p class="text-h6">
                 Sou um desenvolvedor front-end de Conselheiro Lafaiete, Minas
-                Gerais. Já desenvolvi muitos tipos de front-end, desde
+                Gerais que controi aplicações visando o sucesso do produto como
+                um todo. Já desenvolvi muitos tipos de front-end, desde
                 aplicativos bancários até sistema de fidelidade para streamers.
             </p>
             <p class="text-h6">
@@ -41,7 +42,7 @@ const isMobile = $theme.breakpoints.smAndDown;
 section {
     position: relative;
     min-height: calc(100vh - 74px);
-    padding: 0 20px 100px 20px;
+    padding: 12rem 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +72,7 @@ section {
 
     &.mobile {
         flex-flow: column;
+        padding: 6rem 20px;
 
         p {
             width: 100%;
