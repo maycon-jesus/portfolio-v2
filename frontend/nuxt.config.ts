@@ -1,9 +1,8 @@
-import {join} from "path"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible'],
 
   css: ['~/assets/css/reset.css', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 
@@ -48,5 +47,13 @@ export default defineNuxtConfig({
     dirs: [
       './composables/**'
     ]
-  }
+  },
+
+  plausible:{
+    domain:'teste.mayconjesus.dev'
+  },
+
+  devtools: {
+    enable: true
+  },
 })
