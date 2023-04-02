@@ -5,15 +5,11 @@
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
-                <TemplateHeaderMenuItem to="/">Inicio</TemplateHeaderMenuItem>
-                <TemplateHeaderMenuItem to="/skills"
-                    >Sobre</TemplateHeaderMenuItem
-                >
-                <TemplateHeaderMenuItem to="/projetos"
-                    >Projetos</TemplateHeaderMenuItem
-                >
-                <TemplateHeaderMenuItem to="/contato"
-                    >Contato</TemplateHeaderMenuItem
+                <TemplateHeaderMenuItem
+                    v-for="(item, i) in links"
+                    :to="item.to"
+                    :key="i"
+                    >{{ item.text }}</TemplateHeaderMenuItem
                 >
             </div>
             <button v-if="!menuMobile" class="download-cv text-button">
@@ -39,17 +35,11 @@
                 }"
             >
                 <div class="links-mobile">
-                    <TemplateHeaderMenuItem to="/"
-                        >Inicio</TemplateHeaderMenuItem
-                    >
-                    <TemplateHeaderMenuItem to="/skills"
-                        >Skills</TemplateHeaderMenuItem
-                    >
-                    <TemplateHeaderMenuItem to="/projetos"
-                        >Projetos</TemplateHeaderMenuItem
-                    >
-                    <TemplateHeaderMenuItem to="/contato"
-                        >Contato</TemplateHeaderMenuItem
+                    <TemplateHeaderMenuItem
+                        v-for="(item, i) in links"
+                        :to="item.to"
+                        :key="i"
+                        >{{ item.text }}</TemplateHeaderMenuItem
                     >
                     <button class="download-cv-mobile text-button">
                         Baixar CV
@@ -60,11 +50,41 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { RouteLocationRaw } from 'vue-router';
 const drawerIsOpen = ref(false);
 
 const { $theme } = useNuxtApp();
 const menuMobile = $theme.breakpoints.smAndDown;
+const links: {
+    text: string;
+    to: RouteLocationRaw;
+}[] = [
+    {
+        text: 'Inicio',
+        to: {
+            name: 'index',
+        },
+    },
+    // {
+    //     text: 'Skills',
+    //     to: {
+    //         name: 'Skills',
+    //     },
+    // },
+    // {
+    //     text: 'Projetos',
+    //     to: {
+    //         name: 'Projetos',
+    //     },
+    // },
+    // {
+    //     text: 'Contato',
+    //     to: {
+    //         name: 'Contato',
+    //     },
+    // },
+];
 
 const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
 const logoUrl = computed(() => {
