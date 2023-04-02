@@ -1,15 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport'],
 
   css: ['~/assets/css/reset.css', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 
   app: {
     head: {
-      // titleTemplate: '%s - Maycon Jesus',
-      title: 'Maycon Jesus',
+      titleTemplate: '%s - Maycon Jesus',
       meta: [
         {
           name: 'description',
@@ -25,9 +24,9 @@ export default defineNuxtConfig({
         },
         {
           name: 'og:title',
-          content: 'Maycon Jesus - Programador front-end'
+          content: 'Maycon Jesus'
         },
-         {
+        {
           name: 'og:description',
           content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
         },
@@ -47,7 +46,7 @@ export default defineNuxtConfig({
           name: 'og:image:height',
           content: '250'
         },
-         {
+        {
           name: 'og:image:alt',
           content: 'Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja.'
         },
@@ -68,6 +67,7 @@ export default defineNuxtConfig({
           content: '#DC2F2F'
         }
       ],
+      
       link: [
         {
           rel: 'preconnect',
@@ -136,9 +136,25 @@ export default defineNuxtConfig({
     ]
   },
 
-  plausible:{
-    domain:'teste.mayconjesus.dev',
+  plausible: {
+    domain: 'teste.mayconjesus.dev',
     apiHost: 'https://analytics.mayconjesus.dev'
+  },
+
+  viewport: {
+    breakpoints: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1248,
+      xl: 1888
+    },
+    defaultBreakpoints: {
+      desktop: 'lg',
+      tablet: 'md',
+      mobile: 'sm'
+    },
+    fallbackBreakpoint: 'lg'
   },
 
   devtools: {

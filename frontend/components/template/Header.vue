@@ -54,8 +54,8 @@
 import { RouteLocationRaw } from 'vue-router';
 const drawerIsOpen = ref(false);
 
-const { $theme } = useNuxtApp();
-const menuMobile = $theme.breakpoints.smAndDown;
+const { $theme, $viewport } = useNuxtApp();
+const menuMobile = computed(() => $viewport.isLessThan('md'));
 const links: {
     text: string;
     to: RouteLocationRaw;

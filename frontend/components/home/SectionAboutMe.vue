@@ -45,9 +45,9 @@
 
 <script setup lang="ts">
 import skills from '~/assets/data/home-skills.json';
-const { $theme } = useNuxtApp();
+const { $viewport } = useNuxtApp();
 
-const isMobile = $theme.breakpoints.smAndDown;
+const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
 
 <style lang="scss" scoped>
