@@ -50,7 +50,8 @@ export default defineNuxtConfig({
   },
 
   plausible:{
-    domain:'teste.mayconjesus.dev'
+    domain:'teste.mayconjesus.dev',
+    apiHost: 'https://analytics.mayconjesus.dev'
   },
 
   devtools: {
