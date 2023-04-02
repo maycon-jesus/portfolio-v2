@@ -6,7 +6,12 @@
         ></HomeSectionTitle>
         <div class="content">
             <div class="my-info">
-                <h3 class="subtitle text-h4">Me conheça!</h3>
+                <h3
+                    class="subtitle"
+                    :class="{ 'text-h4': !isMobile, 'text-h5': isMobile }"
+                >
+                    Me conheça!
+                </h3>
                 <p class="text-body-1">
                     Sou um <strong>desenvolvedor front-end</strong> que controi
                     aplicações visando o sucesso do produto como um todo. Já
@@ -16,9 +21,15 @@
                 </p>
             </div>
             <div class="skills">
-                <h3 class="subtitle text-h4">Minhas habilidades</h3>
+                <h3
+                    class="subtitle"
+                    :class="{ 'text-h4': !isMobile, 'text-h5': isMobile }"
+                >
+                    Minhas habilidades
+                </h3>
                 <div class="skills-list">
                     <HomeSectionAboutMeSkillChip
+                        :size="isMobile ? 'small' : 'medium'"
                         v-for="(skill, index) in skills"
                         :key="index"
                         >{{ skill }}</HomeSectionAboutMeSkillChip
@@ -91,6 +102,7 @@ section {
             flex-flow: column nowrap;
             align-items: center;
             margin-top: 4.5rem;
+            gap: 3rem;
 
             & > * {
                 width: 100%;
