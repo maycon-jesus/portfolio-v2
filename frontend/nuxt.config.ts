@@ -99,6 +99,10 @@ export default defineNuxtConfig({
           href: '/safari-pinned-tab.svg',
           color: '#1b263b'
         },
+        {
+          rel: 'canonical',
+          href: 'https://mayconjesus.dev'
+        }
       ]
     }
   },
