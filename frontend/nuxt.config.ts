@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration'],
 
   css: ['~/assets/css/reset.css', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 
@@ -67,7 +67,7 @@ export default defineNuxtConfig({
           content: '#DC2F2F'
         }
       ],
-      
+
       link: [
         {
           rel: 'preconnect',
@@ -155,6 +155,10 @@ export default defineNuxtConfig({
       mobile: 'sm'
     },
     fallbackBreakpoint: 'lg'
+  },
+
+  delayHydration: {
+    mode: 'init',
   },
 
   devtools: {

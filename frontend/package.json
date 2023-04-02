@@ -13,6 +13,7 @@
         "@pinia/nuxt": "^0.4.7",
         "@vueuse/nuxt": "^9.13.0",
         "nuxt": "^3.3.2",
+        "nuxt-delay-hydration": "^1.1.4",
         "nuxt-icon": "^0.3.3",
         "nuxt-viewport": "^2.0.4",
         "pinia": "^2.0.33",
