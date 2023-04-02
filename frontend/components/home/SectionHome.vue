@@ -28,7 +28,7 @@
         <div class="image">
             <NuxtImg
                 src="/img/home/eu.png"
-                format="avif"
+                format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
             ></NuxtImg>
         </div>
