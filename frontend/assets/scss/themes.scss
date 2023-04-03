@@ -42,7 +42,9 @@ $teste: null;
             --text-accent: #fff;
         }
 
-        background-color: var(--background);
-        color: var(--text-background);
+        body{
+            background-color: var(--background);
+                color: var(--text-background);
+        }
     }
 }

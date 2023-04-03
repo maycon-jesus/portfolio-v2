@@ -59,7 +59,7 @@
 import { RouteLocationRaw } from 'vue-router';
 const drawerIsOpen = ref(false);
 
-const { $theme, $viewport } = useNuxtApp();
+const { $colorMode, $viewport } = useNuxtApp();
 const menuMobile = computed(() => $viewport.isLessThan('md'));
 const links: {
     text: string;
@@ -93,7 +93,7 @@ const links: {
 
 const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
 const logoUrl = computed(() => {
-    if ($theme.current.dark) {
+    if ($colorMode.preference === 'dark') {
         if (menuMobile.value) return '/img/logos/maycon-jesus-small-dark.svg';
         return '/img/logos/maycon-jesus-large-dark.svg';
     } else {
