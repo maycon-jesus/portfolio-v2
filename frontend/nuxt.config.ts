@@ -14,6 +14,10 @@ export default defineNuxtConfig({
       },
       meta: [
         {
+          name: 'robots',
+          content: 'all'
+        },
+        {
           name: 'description',
           content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
         },
