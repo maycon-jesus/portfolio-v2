@@ -1,7 +1,5 @@
 <template>
-  <DesignThemeProvider>
     <NuxtLayout>
-      <NuxtPage></NuxtPage>
+        <NuxtPage></NuxtPage>
     </NuxtLayout>
-  </DesignThemeProvider>
 </template>

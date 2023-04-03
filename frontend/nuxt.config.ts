@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   ssr: true,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge','@nuxtjs/color-mode'],
 
-  css: ['~/assets/css/reset.css', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
+  css: ['~/assets/css/reset.css','~/assets/scss/themes.scss', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 
   app: {
     head: {
@@ -111,9 +111,7 @@ export default defineNuxtConfig({
     }
   },
 
-  plugins: [
-    '~/plugins/theme'
-  ],
+  plugins: [],
 
   components: {
     dirs: [
@@ -161,6 +159,13 @@ export default defineNuxtConfig({
 
   image: {
     
+  },
+
+  colorMode:{
+    preference: 'dark',
+    fallback: 'dark',
+    classPrefix:'theme-',
+    classSuffix:''
   },
 
   devtools: {
