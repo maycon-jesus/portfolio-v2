@@ -158,7 +158,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    
+
   },
 
   colorMode:{
@@ -171,4 +171,22 @@ export default defineNuxtConfig({
   devtools: {
     enable: false
   },
+
+  optimization:{
+    minimize: true,
+    splitChunks: {
+      chunks: 'all',
+      automaticNameDelimiter: '.',
+      name: true,
+      maxSize: 244000,
+      cacheGroups: {
+        vendor: {
+          name: 'node_vendors',
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          maxSize: 244000
+        }
+      }
+    }
+  } as any
 })
