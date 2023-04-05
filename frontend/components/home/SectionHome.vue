@@ -26,11 +26,19 @@
             </p>
         </div>
         <div class="image">
-            <NuxtImg
+            <NuxtImg v-if="isMobile"
                 src="/img/home/eu.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
-                sizes="xs:200px md:253px"
+                height="200"
+                width="202"
+            ></NuxtImg>
+            <NuxtImg v-else
+                src="/img/home/eu.png"
+                format="webp"
+                alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
+                height="250"
+                width="253"
             ></NuxtImg>
         </div>
         <div v-if="!isMobile" class="icon-scroll"></div>
