@@ -1,7 +1,5 @@
 <template>
-    <section id="home" :class="{ mobile: isMobile }" :style="{
-        backgroundImage: `url(${backgroundImage})`
-    }">
+    <section id="home" :class="{ mobile: isMobile }">
         <div
             class="presentation"
             :class="{
@@ -43,9 +41,6 @@ const { $viewport } = useNuxtApp();
 const $img = useImage()
 
 const isMobile = computed(() => $viewport.isLessThan('md'));
-const backgroundImage = $img('/img/home/bg.jpg',{
-    format: 'webp'
-})
 </script>
 
 <style lang="scss" scoped>
@@ -59,6 +54,8 @@ section {
     flex-flow: row nowrap;
     box-sizing: border-box;
     background-color: var(--background);
+    background-image: url(/img/home/bg.svg);
+    background-size: 1200px;
     background-blend-mode: color-dodge;
 
     h1 {
