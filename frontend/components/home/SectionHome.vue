@@ -34,7 +34,7 @@
                 width="202"
             ></NuxtImg>
             <NuxtImg v-else
-                src="/img/home/eu.png"
+                src="/img/home/eu-h250.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="250"
