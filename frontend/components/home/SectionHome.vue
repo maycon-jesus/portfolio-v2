@@ -30,6 +30,7 @@
                 src="/img/home/eu.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
+                sizes="xs:200px md:253px"
             ></NuxtImg>
         </div>
         <div v-if="!isMobile" class="icon-scroll"></div>
