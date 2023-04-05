@@ -184,7 +184,7 @@ export default defineNuxtConfig({
           name: 'node_vendors',
           test: /[\\/]node_modules[\\/]/,
           chunks: 'all',
-          maxSize: 244000
+          maxSize: 100 * 1024
         }
       }
     }
