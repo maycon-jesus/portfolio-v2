@@ -175,7 +175,7 @@ export default defineNuxtConfig({
   optimization:{
     minimize: true,
     usedExports: true,
-    sideEffects: true,
+    sideEffects: false,
     splitChunks: {
       chunks: 'all',
       automaticNameDelimiter: '.',
