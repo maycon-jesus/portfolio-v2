@@ -27,7 +27,7 @@
         </div>
         <div class="image">
             <NuxtImg v-if="isMobile"
-                src="/img/home/eu-h200.png"
+                src="/img/home/eu-h404.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="200"
