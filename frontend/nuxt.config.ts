@@ -106,6 +106,14 @@ export default defineNuxtConfig({
         {
           rel: 'canonical',
           href: 'https://mayconjesus.dev'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
         }
       ]
     }
@@ -171,24 +179,4 @@ export default defineNuxtConfig({
   devtools: {
     enable: false
   },
-
-  optimization:{
-    minimize: true,
-    usedExports: true,
-    sideEffects: false,
-    splitChunks: {
-      chunks: 'all',
-      automaticNameDelimiter: '.',
-      name: true,
-      maxSize: 244000,
-      cacheGroups: {
-        vendor: {
-          name: 'node_vendors',
-          test: /[\\/]node_modules[\\/]/,
-          chunks: 'all',
-          maxSize: 10 * 1024
-        }
-      }
-    }
-  } as any
 })
