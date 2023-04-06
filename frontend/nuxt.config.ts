@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   ssr: true,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge','@nuxtjs/color-mode'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge', '@nuxtjs/color-mode'],
 
-  css: ['~/assets/css/reset.css','~/assets/scss/themes.scss', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
+  css: ['~/assets/css/reset.css', '~/assets/scss/themes.scss', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 
   app: {
     head: {
@@ -106,6 +106,14 @@ export default defineNuxtConfig({
         {
           rel: 'canonical',
           href: 'https://mayconjesus.dev'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
         }
       ]
     }
@@ -157,15 +165,13 @@ export default defineNuxtConfig({
     mode: 'init',
   },
 
-  image: {
-    
-  },
+  image: {},
 
-  colorMode:{
+  colorMode: {
     preference: 'dark',
     fallback: 'dark',
-    classPrefix:'theme-',
-    classSuffix:''
+    classPrefix: 'theme-',
+    classSuffix: ''
   },
 
   devtools: {

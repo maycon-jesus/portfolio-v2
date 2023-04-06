@@ -19,6 +19,27 @@
                     bancários até sistema de fidelidade para streamers. De uma
                     olhada na seção de Projetos
                 </p>
+                <p class="text-body-1">
+                    Também gosto de compartilhar conteúdo relacionado ao que
+                    aprendi ao longo dos anos em Desenvolvimento Web para que
+                    possa ajudar outras pessoas da Comunidade Dev. Sinta-se à
+                    vontade para se inscrever ou me seguir no meu canal do
+                    Youtube, onde posto conteúdo útil relacionado à
+                    desenvolvimento e programação web.
+                </p>
+                <p class="text-body-1">
+                    Estou aberto a oportunidades de trabalho onde possa
+                    contribuir, aprender e crescer. Se você tiver uma boa
+                    oportunidade que corresponda às minhas habilidades e
+                    experiência, não hesite em entrar em contato comigo. Estou
+                    aberto a oportunidades de trabalho onde possa contribuir,
+                    aprender e crescer. Se você tiver uma boa oportunidade que
+                    corresponda às minhas habilidades e experiência, não hesite
+                    em entrar em contato comigo.
+                </p>
+                <div class="actions-bar">
+                    <MyButton>Contato</MyButton>
+                </div>
             </div>
             <div class="skills">
                 <h3
@@ -82,6 +103,10 @@ section {
         p:nth-child(n + 1) {
             margin-top: 15px;
         }
+
+        .actions-bar {
+            margin-top: 1rem;
+        }
     }
 
     .skills {
@@ -107,6 +132,10 @@ section {
             & > * {
                 width: 100%;
             }
+        }
+
+        .skills .skills-list {
+            gap: 0.5rem;
         }
     }
 }

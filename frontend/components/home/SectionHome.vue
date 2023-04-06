@@ -26,10 +26,19 @@
             </p>
         </div>
         <div class="image">
-            <NuxtImg
-                src="/img/home/eu.png"
+            <NuxtImg v-if="isMobile"
+                src="/img/home/eu-h404.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
+                height="200"
+                width="202"
+            ></NuxtImg>
+            <NuxtImg v-else
+                src="/img/home/eu-h250.png"
+                format="webp"
+                alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
+                height="250"
+                width="253"
             ></NuxtImg>
         </div>
         <div v-if="!isMobile" class="icon-scroll"></div>
@@ -38,6 +47,7 @@
 
 <script setup lang="ts">
 const { $viewport } = useNuxtApp();
+const $img = useImage()
 
 const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
@@ -52,6 +62,10 @@ section {
     align-items: center;
     flex-flow: row nowrap;
     box-sizing: border-box;
+    background-color: var(--background);
+    background-image: url(/img/home/bg.svg);
+    background-size: 1200px;
+    background-blend-mode: color-dodge;
 
     h1 {
         text-align: center;

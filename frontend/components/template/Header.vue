@@ -1,7 +1,8 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img class="logo" :src="logoUrl" alt="Logo Maycon Jesus" />
+            <img v-if="menuMobile" class="logo" :src="logoUrl" alt="Logo Maycon Jesus" height="38" width="25.44" />
+            <img v-else class="logo" :src="logoUrl" alt="Logo Maycon Jesus" height="38" width="170.7" />
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
