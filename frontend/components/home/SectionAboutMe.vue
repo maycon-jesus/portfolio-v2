@@ -23,7 +23,7 @@
                     Também gosto de compartilhar conteúdo relacionado ao que
                     aprendi ao longo dos anos em Desenvolvimento Web para que
                     possa ajudar outras pessoas da Comunidade Dev. Sinta-se à
-                    vontade para se inscrever ou me seguir no meu canal do
+                    vontade para se inscrever no meu canal do
                     Youtube, onde posto conteúdo útil relacionado à
                     desenvolvimento e programação web.
                 </p>
