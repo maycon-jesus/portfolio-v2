@@ -115,6 +115,13 @@ export default defineNuxtConfig({
           rel: 'preconnect',
           href: 'https://fonts.googleapis.com'
         }
+      ],
+
+      script: [
+        {
+          src: '//code.tidio.co/7i8ttqso1dw0edjcezyvr4l5fdidp3ly.js',
+          async: true
+        }
       ]
     }
   },
