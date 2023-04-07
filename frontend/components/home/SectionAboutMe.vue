@@ -1,5 +1,5 @@
 <template>
-    <section :class="{ mobile: isMobile }">
+    <section id="sobre-mim" :class="{ mobile: isMobile }">
         <HomeSectionTitle
             title="Sobre mim"
             description="Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais em termos de programação e tecnologia."
@@ -16,16 +16,17 @@
                     Sou um <strong>desenvolvedor front-end</strong> que controi
                     aplicações visando o sucesso do produto como um todo. Já
                     desenvolvi muitos tipos de front-end, desde aplicativos
-                    bancários até sistema de fidelidade para streamers. De uma
-                    olhada na seção de Projetos
+                    bancários até sistema de fidelidade para streamers. Dê uma
+                    olhada na seção de Projetos.
                 </p>
                 <p class="text-body-1">
                     Também gosto de compartilhar conteúdo relacionado ao que
-                    aprendi ao longo dos anos em Desenvolvimento Web para que
-                    possa ajudar outras pessoas da Comunidade Dev. Sinta-se à
-                    vontade para se inscrever no meu canal do
-                    Youtube, onde posto conteúdo útil relacionado à
-                    desenvolvimento e programação web.
+                    aprendi ao longo dos anos em
+                    <strong>Desenvolvimento para Web</strong> para que possa
+                    ajudar outras pessoas da Comunidade Dev. Sinta-se à vontade
+                    para se inscrever no meu canal do Youtube, onde posto
+                    conteúdo útil relacionado à desenvolvimento e programação
+                    web.
                 </p>
                 <p class="text-body-1">
                     Estou aberto a oportunidades de trabalho onde possa
@@ -38,7 +39,9 @@
                     em entrar em contato comigo.
                 </p>
                 <div class="actions-bar">
-                    <MyButton>Contato</MyButton>
+                    <MyButton :to="{ name: 'index', hash: '#contato' }"
+                        >Contato</MyButton
+                    >
                 </div>
             </div>
             <div class="skills">
@@ -66,8 +69,8 @@
 
 <script setup lang="ts">
 import skills from '~/assets/data/home-skills.json';
-const { $viewport } = useNuxtApp();
 
+const { $viewport } = useNuxtApp();
 const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
 
@@ -76,7 +79,7 @@ section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 12rem 20px;
+    padding: 8rem 20px;
 
     .subtitle {
         font-weight: bold;
@@ -122,7 +125,7 @@ section {
     }
 
     &.mobile {
-        padding: 6rem 20px;
+        padding: 4rem 20px;
         .content {
             flex-flow: column nowrap;
             align-items: center;

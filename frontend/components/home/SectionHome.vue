@@ -24,16 +24,23 @@
                 Sou apaixonado por interfaces de ponta, perfeitas em
                 pixels(pixel-perfect), bonitas e UX intuitivamente implementado.
             </p>
+            <div class="action-bar">
+                <MyButton :to="{ name: 'index', hash: '#contato' }"
+                    >Contato</MyButton
+                >
+            </div>
         </div>
         <div class="image">
-            <NuxtImg v-if="isMobile"
+            <NuxtImg
+                v-if="isMobile"
                 src="/img/home/eu-h404.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="200"
                 width="202"
             ></NuxtImg>
-            <NuxtImg v-else
+            <NuxtImg
+                v-else
                 src="/img/home/eu-h250.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
@@ -47,7 +54,6 @@
 
 <script setup lang="ts">
 const { $viewport } = useNuxtApp();
-const $img = useImage()
 
 const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
@@ -86,6 +92,10 @@ section {
         img {
             height: 250px;
         }
+    }
+
+    .action-bar {
+        margin-top: 1rem;
     }
 
     &.mobile {

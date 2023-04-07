@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Email",
+        "icon": "material-symbols:mail-outline",
+        "url": "mailto:email@mayconjesus.dev",
+        "urlLabel": "email@mayconjesus.dev",
+        "category": "contact"
+    },
+    {
+        "name": "LinkedIn",
+        "icon": "ph:linkedin-logo-bold",
+        "url": "https://www.linkedin.com/in/maycon-jesus-20b3a6216",
+        "urlLabel": "Conecte-se comigo",
+        "category": "contact"
+    },
+    {
+        "name": "Whatsapp",
+        "icon": "ic:baseline-whatsapp",
+        "url": "https://api.whatsapp.com/send?phone=5531997466833",
+        "urlLabel": "+55 31 99746-6833",
+        "category": "contact"
+    },
+    {
+        "name": "Blog",
+        "icon": "simple-icons:devto",
+        "url": "https://dev.to/mayconjesus",
+        "urlLabel": "Veja meus posts",
+        "category": "social"
+    },
+    {
+        "name": "Youtube",
+        "icon": "ph:youtube-logo",
+        "url": "https://dev.to/mayconjesus",
+        "urlLabel": "Veja meus videos",
+        "category": "social"
+    }
+]

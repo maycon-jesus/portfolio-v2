@@ -1,21 +1,53 @@
 <template>
     <nuxt-link
         class="link text-button"
+        :class="{
+            'link-active': active,
+        }"
         :to="$props.to"
-        exact-active-class="link-active"
+        :exact-active-class="props.activeByHash ? undefined : 'link-active'"
+        @click="emits('click:link')"
     >
         <span><slot name="default"></slot></span>
     </nuxt-link>
 </template>
 
 <script lang="ts" setup>
-import { RouteLocationRaw } from 'vue-router';
+import { RouteLocationRaw, RouteLocationNamedRaw } from 'vue-router';
+const route = useRoute();
 
-const props = defineProps({
-    to: {
-        type: Object as PropType<RouteLocationRaw>,
-        required: false,
+const props = withDefaults(
+    defineProps<{
+        to: RouteLocationRaw;
+        activeByHash: boolean;
+    }>(),
+    {
+        activeByHash: false,
     },
+);
+
+const emits = defineEmits<{
+    (e: 'click:link'): void;
+}>();
+
+const active = ref(false);
+
+const updateActive = () => {
+    if (props.activeByHash && props.to && typeof props.to === 'object') {
+        const propsTo = props.to as RouteLocationNamedRaw;
+        let isActive = true;
+        const propsRouteHash = props.to.hash || '';
+        if (propsRouteHash != route.hash) isActive = false;
+        if (propsTo.name != route.name) isActive = false;
+        active.value = isActive;
+    }
+};
+
+onMounted(() => {
+    updateActive();
+});
+watch(route, () => {
+    updateActive();
 });
 </script>
 
@@ -33,13 +65,9 @@ const props = defineProps({
     transition: all 0.1s;
     height: 38px;
 
+    &-active,
     &:hover {
-        background-color: var(--secondary);
-        color: var(--text-secondary);
-    }
-
-    &-active {
-        background-color: var(--accent);
+        background: var(--accent);
         color: var(--text-accent);
     }
 }

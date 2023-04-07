@@ -1,6 +1,7 @@
 <template>
     <HomeSectionHome></HomeSectionHome>
     <HomeSectionAboutMe />
+    <HomeSectionContact />
 </template>
 
 <script setup>
