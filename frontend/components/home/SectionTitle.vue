@@ -24,7 +24,8 @@ const props = defineProps({
     // background-clip: text;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
-    width: max-content;
+    width: fit-content;
+    text-align: center;
     border-radius: 0 0 20px 20px;
     padding-inline: 20px;
     padding-block: 5px;
@@ -45,11 +46,11 @@ const props = defineProps({
     width: 3rem;
     height: 5px;
     border-radius: 999rem;
-    background: linear-gradient(to right, var(--accent), var(--secondary));
+    background: var(--secondary-accent-gradient);
+    color: var(--text-secondary-accent-gradient);
 }
 
 .title-desc {
-    margin: auto;
     max-width: 44rem;
     text-align: center;
     color: var(--text-medium-background);

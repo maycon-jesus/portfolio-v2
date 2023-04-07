@@ -1,14 +1,29 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img v-if="menuMobile" class="logo" :src="logoUrl" alt="Logo Maycon Jesus" height="38" width="25.44" />
-            <img v-else class="logo" :src="logoUrl" alt="Logo Maycon Jesus" height="38" width="170.7" />
+            <img
+                v-if="menuMobile"
+                class="logo"
+                :src="logoUrl"
+                alt="Logo Maycon Jesus"
+                height="38"
+                width="25.44"
+            />
+            <img
+                v-else
+                class="logo"
+                :src="logoUrl"
+                alt="Logo Maycon Jesus"
+                height="38"
+                width="170.7"
+            />
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
                 <TemplateHeaderMenuItem
                     v-for="(item, i) in links"
                     :to="item.to"
+                    :active-by-hash="item.activeByHash"
                     :key="i"
                     >{{ item.text }}</TemplateHeaderMenuItem
                 >
@@ -44,7 +59,9 @@
                     <TemplateHeaderMenuItem
                         v-for="(item, i) in links"
                         :to="item.to"
+                        :active-by-hash="item.activeByHash"
                         :key="i"
+                        @click:link="drawerIsOpen = false"
                         >{{ item.text }}</TemplateHeaderMenuItem
                     >
                     <button class="download-cv-mobile text-button">
@@ -65,12 +82,22 @@ const menuMobile = computed(() => $viewport.isLessThan('md'));
 const links: {
     text: string;
     to: RouteLocationRaw;
+    activeByHash?: boolean;
 }[] = [
     {
         text: 'Inicio',
         to: {
             name: 'index',
         },
+        activeByHash: true,
+    },
+    {
+        text: 'Sobre mim',
+        to: {
+            name: 'index',
+            hash: '#sobre-mim',
+        },
+        activeByHash: true,
     },
     // {
     //     text: 'Skills',
@@ -84,12 +111,14 @@ const links: {
     //         name: 'Projetos',
     //     },
     // },
-    // {
-    //     text: 'Contato',
-    //     to: {
-    //         name: 'Contato',
-    //     },
-    // },
+    {
+        text: 'Contato',
+        to: {
+            name: 'index',
+            hash: '#contato',
+        },
+        activeByHash: true,
+    },
 ];
 
 const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
@@ -159,7 +188,7 @@ header {
     &:hover {
         background-color: var(--accent--35-opacity);
         box-shadow: var(--accent--35-opacity) 0px 5px 15px;
-        color: var(--text-accent);
+        color: var(--text-accent--35-opacity);
     }
 }
 

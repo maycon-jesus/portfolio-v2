@@ -8,23 +8,27 @@ $teste: null;
             // --background: #060708;
             // --text-background: #fff;
 
-            --background: #1b263b;
+            --background: #393E46;
             --text-background: #ffffff;
             --text-medium-background: rgba(255, 255, 255,.87);
 
             // --background2: #121417;
             // --text-background2: #fff;
 
-            --background2: #0d1b2a;
-            --background2--80-opacity: rgba(13, 27, 42,.8);
+            --background2: #222831;
+            --background2--80-opacity: #222831cc;
             --text-background2: #fff;
             
-            --secondary: #F5841A;
-            --text-secondary: #242424;
+            --secondary: #DC2F2F;
+            --text-secondary: #fff;
 
-            --accent: #DC2F2F;
-            --accent--35-opacity: rgba(215, 35, 35, .35);
-            --text-accent: #fff;
+            --accent: #F5841A;
+            --text-accent: #000;
+            --accent--35-opacity: rgba(245, 132, 26,.35);
+            --text-accent--35-opacity: #fff;
+
+            --secondary-accent-gradient: linear-gradient(to right, var(--secondary), var(--accent));
+            --text-secondary-accent-gradient: #fff;
         }
 
         @if $theme ==light {
