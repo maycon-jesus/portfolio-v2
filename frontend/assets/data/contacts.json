@@ -21,6 +21,14 @@
         "category": "contact"
     },
     {
+        "id": "github",
+        "name": "GitHub",
+        "icon": "mdi:github",
+        "url": "https://github.com/maycon-jesus",
+        "urlLabel": "Veja meus projetos",
+        "category": "social"
+    },
+    {
         "name": "Blog",
         "icon": "simple-icons:devto",
         "url": "https://dev.to/mayconjesus",
@@ -30,7 +38,7 @@
     {
         "name": "Youtube",
         "icon": "ph:youtube-logo",
-        "url": "https://dev.to/mayconjesus",
+        "url": "https://www.youtube.com/channel/UCDCIXV4PHlrz_wRA1fmQWaw",
         "urlLabel": "Veja meus videos",
         "category": "social"
     }

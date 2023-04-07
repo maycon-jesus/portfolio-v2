@@ -25,9 +25,16 @@
                 pixels(pixel-perfect), bonitas e UX intuitivamente implementado.
             </p>
             <div class="action-bar">
+                <MyButton
+                    icon="mdi:github"
+                    :href="githubContact?.url"
+                    target="_blank"
+                    >GitHub</MyButton
+                >
                 <MyButton :to="{ name: 'index', hash: '#contato' }"
                     >Contato</MyButton
                 >
+                <MyButton disabled>Projetos</MyButton>
             </div>
         </div>
         <div class="image">
@@ -53,7 +60,9 @@
 </template>
 
 <script setup lang="ts">
+import contacts from '~/assets/data/contacts.json';
 const { $viewport } = useNuxtApp();
+const githubContact = contacts.find((c) => c.id === 'github');
 
 const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
@@ -95,12 +104,16 @@ section {
     }
 
     .action-bar {
+        display: flex;
+        flex-flow: row wrap;
         margin-top: 1rem;
+        gap: 1rem;
     }
 
     &.mobile {
         flex-flow: column;
         padding: 6rem 20px;
+        background-size: 100vw;
 
         p {
             width: 100%;

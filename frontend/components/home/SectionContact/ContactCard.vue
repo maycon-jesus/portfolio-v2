@@ -39,6 +39,8 @@ const props = defineProps({
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 0.5rem;
+    border-radius: 24px;
     transition: all 0.3s;
 
     .icon-wrapper {
@@ -70,7 +72,7 @@ const props = defineProps({
     }
 
     &:hover {
-        transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
 </style>
