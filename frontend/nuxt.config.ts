@@ -67,11 +67,11 @@ export default defineNuxtConfig({
         },
         {
           name: 'msapplication-TileColor',
-          content: '#121417'
+          content: '#222831'
         },
         {
           name: 'theme-color',
-          content: '#1b263b'
+          content: '#393E46'
         }
       ],
 
@@ -101,7 +101,7 @@ export default defineNuxtConfig({
         {
           rel: 'mask-icon',
           href: '/safari-pinned-tab.svg',
-          color: '#1b263b'
+          color: '#F5841A'
         },
         {
           rel: 'canonical',

@@ -46,8 +46,8 @@ section {
         .socials {
             display: grid;
             margin: 0 auto 0 auto;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 6rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
         }
     }
 
@@ -58,19 +58,19 @@ section {
 
             .socials {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2.5rem;
             }
         }
     }
 
     &.sm .socials {
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     &.md .socials {
         grid-template-columns: repeat(3, 1fr);
-        gap: 4.5rem;
+        gap: 3.75rem;
     }
 }
 </style>

@@ -60,7 +60,7 @@
                     >
                 </div>
                 <div class="actions-bar">
-                    <MyButton>Veja mais</MyButton>
+                    <MyButton disabled>Veja mais</MyButton>
                 </div>
             </div>
         </div>
