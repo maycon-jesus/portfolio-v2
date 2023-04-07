@@ -70,7 +70,7 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     padding: 16px 2rem;
 
     &-mobile {
-        padding: 0.75rem 1.5rem;
+        padding: 12px 1.5rem;
     }
 
     &:hover:not([disabled]) {
@@ -87,6 +87,7 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     }
 
     .text {
+        height: 100%;
         display: flex;
         align-items: center;
     }
@@ -96,8 +97,7 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     padding: 9px 2rem;
 
     &.button-mobile {
-        height: 38px;
-        padding: 0 1.5rem;
+        padding: 5px 1.5rem;
     }
 }
 </style>
