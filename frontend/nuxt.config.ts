@@ -163,7 +163,7 @@ export default defineNuxtConfig({
     defaultBreakpoints: {
       desktop: 'lg',
       tablet: 'md',
-      mobile: 'sm'
+      mobile: 'xs'
     },
     fallbackBreakpoint: 'lg'
   },
