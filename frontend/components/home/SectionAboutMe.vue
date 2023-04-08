@@ -1,9 +1,9 @@
 <template>
     <section id="sobre-mim" :class="{ mobile: isMobile }">
-        <HomeSectionTitle
+        <SectionTitle
             title="Sobre mim"
             description="Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais em termos de programação e tecnologia."
-        ></HomeSectionTitle>
+        ></SectionTitle>
         <div class="content">
             <div class="my-info">
                 <h3

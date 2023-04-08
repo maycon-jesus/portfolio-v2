@@ -29,7 +29,7 @@
                 >
             </div>
             <button v-if="!menuMobile" class="download-cv text-button">
-                Download CV
+                Currículo
             </button>
 
             <!-- MOBILE -->
@@ -65,7 +65,7 @@
                         >{{ item.text }}</TemplateHeaderMenuItem
                     >
                     <button class="download-cv-mobile text-button">
-                        Baixar CV
+                        Currículo
                     </button>
                 </div>
             </MyExpandTransitionY>
@@ -99,12 +99,12 @@ const links: {
         },
         activeByHash: true,
     },
-    // {
-    //     text: 'Skills',
-    //     to: {
-    //         name: 'Skills',
-    //     },
-    // },
+    {
+        text: 'Experiência',
+        to: {
+            name: 'experiencia',
+        },
+    },
     // {
     //     text: 'Projetos',
     //     to: {

@@ -1,11 +1,21 @@
 <template>
-    <h2 class="title text-h3">{{ props.title }}</h2>
+    <component
+        :is="props.component ?? 'h2'"
+        class="title"
+        :class="{
+            'text-h3': !isMobile,
+            'text-h4': isMobile,
+        }"
+    >
+        {{ props.title }}
+    </component>
     <p v-if="props.description" class="text-h6 title-desc">
         {{ props.description }}
     </p>
 </template>
 
 <script setup lang="ts">
+const { $viewport } = useNuxtApp();
 const props = defineProps({
     title: {
         type: String,
@@ -15,7 +25,12 @@ const props = defineProps({
         type: String,
         default: null,
     },
+    component: {
+        type: String,
+    },
 });
+
+const isMobile = computed(() => $viewport.isLessThan('md'));
 </script>
 
 <style lang="scss" scoped>

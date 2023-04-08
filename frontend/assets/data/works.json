@@ -1,0 +1,54 @@
+[
+    {
+        "name": "MOVA S.E.P.",
+        "logoUrl": "https://mova.vc/img/footer_logo_mova.svg",
+        "orgUrl": "https://mova.vc/",
+        "role": "Desenvolvedor front-end pleno",
+        "startDate": "2022",
+        "endDate": "Agora",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "Vue",
+            "Vuetify",
+            "Javascript",
+            "Typescript",
+            "Cypress",
+            "Playwright",
+            "Jest"
+        ]
+    },
+    {
+        "name": "MOVA S.E.P.",
+        "logoUrl": "https://mova.vc/img/footer_logo_mova.svg",
+        "orgUrl": "https://mova.vc/",
+        "role": "Desenvolvedor front-end júnior",
+        "startDate": "2022",
+        "endDate": "2022",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "Vue",
+            "Vuetify",
+            "Javascript",
+            "Cypress",
+            "Jest"
+        ]
+    },
+    {
+        "name": "Freelancer",
+        "role": "Desenvolvedor full-stack",
+        "startDate": "2021",
+        "endDate": "2022",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "Vue",
+            "Vuetify",
+            "Javascript",
+            "Typescript",
+            "MySQL",
+            "Gulp"
+        ]
+    }
+]
