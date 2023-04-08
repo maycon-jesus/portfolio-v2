@@ -122,5 +122,119 @@
                 "progress": "#1D758E"
             }
         }
+    ],
+    "tests": [
+        {
+            "label": "Cypress",
+            "icon": "cypress",
+            "xpLevel": 3,
+            "docsUrl": "https://www.cypress.io/",
+            "colors": {
+                "label": "#fff",
+                "progress": "#fff"
+            }
+        },
+        {
+            "label": "Playwright com Typescript",
+            "icon": "playwright",
+            "xpLevel": 3,
+            "docsUrl": "https://playwright.dev/",
+            "colors": {
+                "label": "#45BA4B",
+                "progress": "#45BA4B"
+            }
+        },
+        {
+            "label": "Jest",
+            "icon": "jest",
+            "xpLevel": 2,
+            "docsUrl": "https://jestjs.io/",
+            "colors": {
+                "label": "#99425B",
+                "progress": "#99425B"
+            }
+        }
+    ],
+    "others": [
+        {
+            "label": "Github",
+            "icon": "github",
+            "xpLevel": 3,
+            "docsUrl": "https://github.com/",
+            "colors": {
+                "label": "#fff",
+                "progress": "#fff"
+            }
+        },
+        {
+            "label": "Gitlab",
+            "icon": "gitlab",
+            "xpLevel": 3,
+            "docsUrl": "https://about.gitlab.com/",
+            "colors": {
+                "label": "#FA6D27",
+                "progress": "#FA6D27"
+            }
+        },
+        {
+            "label": "npm",
+            "icon": "npm",
+            "xpLevel": 2,
+            "docsUrl": "https://npmjs.com/",
+            "colors": {
+                "label": "#C63537",
+                "progress": "#C63537"
+            }
+        },
+        {
+            "label": "Git",
+            "icon": "git",
+            "xpLevel": 2,
+            "docsUrl": "https://git-scm.com/",
+            "colors": {
+                "label": "#F54D27",
+                "progress": "#F54D27"
+            }
+        },
+        {
+            "label": "Postman",
+            "icon": "postman",
+            "xpLevel": 2,
+            "docsUrl": "https://www.postman.com/",
+            "colors": {
+                "label": "#FA6C38",
+                "progress": "#FA6C38"
+            }
+        },
+        {
+            "label": "Puppeteer",
+            "icon": "puppeteer",
+            "xpLevel": 2,
+            "docsUrl": "https://pptr.dev/",
+            "colors": {
+                "label": "#28D8A1",
+                "progress": "#28D8A1"
+            }
+        },
+        {
+            "label": "Gulp",
+            "icon": "gulp",
+            "xpLevel": 1,
+            "docsUrl": "https://gulpjs.com/",
+            "colors": {
+                "label": "#CF4647",
+                "progress": "#CF4647"
+            }
+        },
+        {
+            "label": "Docker",
+            "icon": "docker",
+            "xpLevel": 1,
+            "docsUrl": "https://www.docker.com/",
+            "colors": {
+                "label": "#3596ED",
+                "progress": "#3596ED"
+            }
+        }
     ]
 }

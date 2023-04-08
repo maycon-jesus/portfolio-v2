@@ -100,9 +100,9 @@ const links: {
         activeByHash: true,
     },
     {
-        text: 'Skills',
+        text: 'Experiência',
         to: {
-            name: 'skills',
+            name: 'experiencia',
         },
     },
     // {

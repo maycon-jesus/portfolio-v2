@@ -9,7 +9,7 @@
             'button-mobile': isMobile,
             'button-with-icon': !!props.icon,
         }"
-        :disabled="props.disabled"
+        :disabled="props.disabled || undefined"
     >
         <span class="text"
             ><Icon

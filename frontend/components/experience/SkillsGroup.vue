@@ -1,5 +1,5 @@
 <template>
-    <div class="skills-group" :class="{ mobile: isMobile }">
+    <div class="skills-group" :class="{ mobile: isMobile, tablet: isTablet }">
         <h2 class="text-h5">
             <!-- <div aria-hidden="true" class="title-bar"></div> -->
             {{ props.title }}
@@ -34,7 +34,8 @@ const props = defineProps<{
     }[];
 }>();
 const { $viewport } = useNuxtApp();
-const isMobile = computed(() => $viewport.isLessThan('sm'));
+const isMobile = computed(() => $viewport.isLessThan('md'));
+const isTablet = computed(() => $viewport.match('md'));
 </script>
 
 <style lang="scss" scoped>
@@ -53,14 +54,21 @@ h2 {
 .skills-list {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 284px);
     gap: 1rem;
     padding: 25px;
 }
 
 .mobile {
     .skills-list {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 284px);
+        width: 284px;
+    }
+}
+
+.tablet {
+    .skills-list {
+        grid-template-columns: repeat(2, 284px);
     }
 }
 </style>

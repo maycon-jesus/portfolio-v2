@@ -82,8 +82,7 @@ useSeoMeta({
     }
 
     &:hover {
-        transform: scale(1.1);
-        filter: saturate(1);
+        transform: scale(1.05);
 
         .skill-name {
             color: var(--label-color);
@@ -105,7 +104,6 @@ useSeoMeta({
     box-sizing: border-box;
     .icon-wrapper {
         transition: all 0.1s;
-        margin-top: -2px;
     }
 }
 
