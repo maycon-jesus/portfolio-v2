@@ -64,10 +64,6 @@ const props = defineProps({
         required: true,
     },
 });
-
-useSeoMeta({
-    title: 'Skills',
-});
 </script>
 
 <style lang="scss" scoped>
