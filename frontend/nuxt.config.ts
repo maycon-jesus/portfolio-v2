@@ -22,39 +22,39 @@ export default defineNuxtConfig({
           content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
         },
         {
-          name: 'og:type',
+          property: 'og:type',
           content: 'website'
         },
         {
-          name: 'og:url',
+          property: 'og:url',
           content: 'https://mayconjesus.dev'
         },
         {
-          name: 'og:title',
+          property: 'og:title',
           content: 'Maycon Jesus'
         },
         {
-          name: 'og:description',
+          property: 'og:description',
           content: 'Me chamo Maycon Jesus, sou um desenvolvedor front-end, que controi aplicações visando o sucesso do produto como um todo.'
         },
         {
-          name: 'og:image',
+          property: 'og:image',
           content: 'https://mayconjesus.dev/img/home/eu.png'
         },
         {
-          name: 'og:image:type',
+          property: 'og:image:type',
           content: 'image/png'
         },
         {
-          name: 'og:image:width',
+          property: 'og:image:width',
           content: '253'
         },
         {
-          name: 'og:image:height',
+          property: 'og:image:height',
           content: '250'
         },
         {
-          name: 'og:image:alt',
+          property: 'og:image:alt',
           content: 'Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja.'
         },
         {
