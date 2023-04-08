@@ -28,9 +28,9 @@
                     >{{ item.text }}</TemplateHeaderMenuItem
                 >
             </div>
-            <button v-if="!menuMobile" class="download-cv text-button">
+            <!-- <button v-if="!menuMobile" class="download-cv text-button">
                 Currículo
-            </button>
+            </button> -->
 
             <!-- MOBILE -->
             <button
@@ -64,9 +64,9 @@
                         @click:link="drawerIsOpen = false"
                         >{{ item.text }}</TemplateHeaderMenuItem
                     >
-                    <button class="download-cv-mobile text-button">
+                    <!-- <button class="download-cv-mobile text-button">
                         Currículo
-                    </button>
+                    </button> -->
                 </div>
             </MyExpandTransitionY>
         </header>
