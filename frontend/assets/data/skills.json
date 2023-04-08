@@ -1,0 +1,126 @@
+{
+    "clientSide": [
+        {
+            "label": "HTML 5",
+            "icon": "html5",
+            "xpLevel": 3,
+            "docsUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "colors": {
+                "label": "#E44D26",
+                "progress": "#E44D26"
+            }
+        },
+        {
+            "label": "CSS 3",
+            "icon": "css3",
+            "xpLevel": 3,
+            "docsUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "colors": {
+                "label": "#3465F1",
+                "progress": "#3465F1"
+            }
+        },
+        {
+            "label": "Javascript",
+            "icon": "javascript",
+            "xpLevel": 3,
+            "docsUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "colors": {
+                "progress": "#F7DF1D",
+                "label": "#F7DF1D"
+            }
+        },
+        {
+            "label": "Vue | v2 e v3",
+            "icon": "vuejs",
+            "xpLevel": 3,
+            "docsUrl": "https://vuejs.org/",
+            "colors": {
+                "progress": "#41b883",
+                "label": "#41b883"
+            }
+        },
+        {
+            "label": "Nuxt | v2 e v3",
+            "icon": "nuxt",
+            "xpLevel": 3,
+            "docsUrl": "https://nuxt.com/",
+            "colors": {
+                "progress": "#22DC82",
+                "label": "#22DC82"
+            }
+        },
+        {
+            "label": "Sass",
+            "icon": "sass",
+            "xpLevel": 2,
+            "docsUrl": "https://sass-lang.com/",
+            "colors": {
+                "progress": "#CD6799",
+                "label": "#CD6799"
+            }
+        },
+        {
+            "label": "React",
+            "icon": "react",
+            "xpLevel": 1,
+            "docsUrl": "https://react.dev/",
+            "colors": {
+                "progress": "#53C1DE",
+                "label": "#53C1DE"
+            }
+        }
+    ],
+    "serverSide": [
+        {
+            "label": "Express",
+            "icon": "express",
+            "xpLevel": 3,
+            "docsUrl": "https://expressjs.com/pt-br/",
+            "colors": {
+                "label": "#fff",
+                "progress": "#fff"
+            }
+        },
+        {
+            "label": "Node.js",
+            "icon": "nodejs",
+            "xpLevel": 2,
+            "docsUrl": "https://nodejs.org/en",
+            "colors": {
+                "label": "#8CC84B",
+                "progress": "#8CC84B"
+            }
+        },
+        {
+            "label": "Typescript",
+            "icon": "typescript",
+            "xpLevel": 2,
+            "docsUrl": "https://www.typescriptlang.org/",
+            "colors": {
+                "label": "#2B7ACB",
+                "progress": "#2B7ACB"
+            }
+        },
+        {
+            "label": "Nest",
+            "icon": "nest",
+            "xpLevel": 2,
+            "docsUrl": "https://nestjs.com/",
+            "colors": {
+                "label": "#E0234E",
+                "progress": "#E0234E"
+            }
+        },
+        {
+            "label": "MySQL",
+            "icon": "mysql",
+            "xpLevel": 1,
+            "docsUrl": "https://www.mysql.com/",
+            "colors": {
+                "label": "#1D758E",
+                "progress": "#1D758E"
+            }
+        }
+    ]
+}

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
 
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge', '@nuxtjs/color-mode'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-icon', 'nuxt-icons','@nuxtjs/plausible', 'nuxt-viewport', 'nuxt-delay-hydration', '@nuxt/image-edge', '@nuxtjs/color-mode'],
 
   css: ['~/assets/css/reset.css', '~/assets/scss/themes.scss', '~/assets/scss/typography.scss', '~/assets/scss/uistate.scss'],
 

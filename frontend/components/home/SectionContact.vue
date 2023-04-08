@@ -1,9 +1,9 @@
 <template>
     <section id="contato" :class="{ mobile: isMobile, sm: isSm, md: isMd }">
-        <HomeSectionTitle
+        <SectionTitle
             title="Contato"
             description="Vamos trabalhar juntos e criar lindos websites."
-        ></HomeSectionTitle>
+        ></SectionTitle>
         <div class="content">
             <div class="socials">
                 <HomeSectionContactCard
