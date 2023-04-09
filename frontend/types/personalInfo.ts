@@ -22,6 +22,7 @@ export interface IPersonalInfoAddress {
 export interface IPersonalInfo {
     name: string;
     role: string;
+    aboutMe: string;
     address: IPersonalInfoAddress;
     contacts: IPersonalInfoContact[];
 }

@@ -3,13 +3,8 @@
         <div class="top-bar"></div>
         <div class="cols">
             <div class="col-1">
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
+                <ResumeAboutMe :text="props.personalInfo.aboutMe" />
+                <hr />
             </div>
             <div class="col-2">
                 <ResumeProfile
@@ -34,6 +29,8 @@ const props = defineProps<{
 .resume-page {
     background-color: #fff;
     font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .top-bar {
@@ -44,10 +41,14 @@ const props = defineProps<{
 .cols {
     display: flex;
     flex-flow: row nowrap;
+    flex-grow: 1;
 
     .col-1 {
         width: 32%;
+        box-sizing: border-box;
         background-color: #393e46;
+        color: #fff;
+        padding: 23px 27px;
     }
 
     .col-2 {

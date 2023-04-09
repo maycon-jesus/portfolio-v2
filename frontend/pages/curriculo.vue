@@ -18,6 +18,7 @@ const personalInfoResume = computed<IPersonalInfo>(() => {
         name: personalInfo.name,
         role: personalInfo.role,
         address: personalInfo.address,
+        aboutMe: personalInfo.aboutMe,
         contacts: personalInfo.contactsForPage('resume'),
     };
 });
