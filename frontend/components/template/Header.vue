@@ -1,22 +1,24 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img
-                v-if="menuMobile"
-                class="logo"
-                :src="logoUrl"
-                alt="Logo Maycon Jesus"
-                height="38"
-                width="25.44"
-            />
-            <img
-                v-else
-                class="logo"
-                :src="logoUrl"
-                alt="Logo Maycon Jesus"
-                height="38"
-                width="170.7"
-            />
+            <nuxt-link to="/" :style="{ height: '38px' }">
+                <img
+                    v-if="menuMobile"
+                    class="logo"
+                    :src="logoUrl"
+                    alt="Logo Maycon Jesus"
+                    height="38"
+                    width="25.44"
+                />
+                <img
+                    v-else
+                    class="logo"
+                    :src="logoUrl"
+                    alt="Logo Maycon Jesus"
+                    height="38"
+                    width="170.7"
+                />
+            </nuxt-link>
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">

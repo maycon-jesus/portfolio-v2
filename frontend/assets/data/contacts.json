@@ -4,21 +4,27 @@
         "icon": "material-symbols:mail-outline",
         "url": "mailto:email@mayconjesus.dev",
         "urlLabel": "email@mayconjesus.dev",
-        "category": "contact"
+        "visibility": {
+            "resume": true
+        }
     },
     {
         "name": "LinkedIn",
         "icon": "ph:linkedin-logo-bold",
         "url": "https://www.linkedin.com/in/maycon-jesus-20b3a6216",
         "urlLabel": "Conecte-se comigo",
-        "category": "contact"
+        "visibility": {
+            "resume": false
+        }
     },
     {
         "name": "Whatsapp",
         "icon": "ic:baseline-whatsapp",
         "url": "https://api.whatsapp.com/send?phone=5531997466833",
         "urlLabel": "+55 31 99746-6833",
-        "category": "contact"
+        "visibility": {
+            "resume": true
+        }
     },
     {
         "id": "github",
@@ -26,20 +32,26 @@
         "icon": "mdi:github",
         "url": "https://github.com/maycon-jesus",
         "urlLabel": "Veja meus projetos",
-        "category": "social"
+        "visibility": {
+            "resume": false
+        }
     },
     {
         "name": "Blog",
         "icon": "simple-icons:devto",
         "url": "https://dev.to/mayconjesus",
         "urlLabel": "Veja meus posts",
-        "category": "social"
+        "visibility": {
+            "resume": false
+        }
     },
     {
         "name": "Youtube",
         "icon": "ph:youtube-logo",
         "url": "https://www.youtube.com/channel/UCDCIXV4PHlrz_wRA1fmQWaw",
         "urlLabel": "Veja meus videos",
-        "category": "social"
+        "visibility": {
+            "resume": false
+        }
     }
 ]
