@@ -1,6 +1,10 @@
 import { defineStore } from 'pinia';
 import { personalInfo } from '~~/assets/data/personal-info';
-import { IPersonalInfo, pagesVariationsContact } from '~~/types/personalInfo';
+import {
+    IPersonalInfo,
+    pagesVariationsContact,
+    pagesVariationsSkill,
+} from '~~/types/personalInfo';
 
 export const usePersonalInfoStore = defineStore('personal-info', {
     state: (): IPersonalInfo => {
@@ -16,6 +20,11 @@ export const usePersonalInfoStore = defineStore('personal-info', {
                         let b = _b.displayOrder?.resume || 0;
                         return a - b;
                     });
+            };
+        },
+        skillsForPage(state) {
+            return (page: pagesVariationsSkill) => {
+                return state.skills.filter((c) => c.visibility.includes(page));
             };
         },
     },

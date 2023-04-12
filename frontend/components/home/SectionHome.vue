@@ -6,14 +6,14 @@
                 mobile: isMobile,
             }"
         >
-            <h1
+            <h2
                 :class="{
                     'text-h2': !isMobile,
                     'text-h3': isMobile,
                 }"
             >
                 Olá, me chamo <strong>Maycon Jesus</strong>
-            </h1>
+            </h2>
             <p class="text-h6">
                 Sou um desenvolvedor front-end de Conselheiro Lafaiete, Minas
                 Gerais que controi aplicações visando o sucesso do produto como

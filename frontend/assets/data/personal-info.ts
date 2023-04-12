@@ -1,5 +1,6 @@
 import { IPersonalInfo } from '~~/types/personalInfo';
 import { contacts } from './contacts';
+import { skills } from './skills';
 
 export const personalInfo: IPersonalInfo = {
     name: 'Maycon Jesus Pinto',
@@ -13,4 +14,5 @@ export const personalInfo: IPersonalInfo = {
         url: 'https://goo.gl/maps/nyZ6DMYfc1p9YKYNA',
     },
     contacts: contacts,
+    skills: skills,
 };

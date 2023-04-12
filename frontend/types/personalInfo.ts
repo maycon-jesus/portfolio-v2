@@ -1,4 +1,5 @@
 export type pagesVariationsContact = 'home' | 'resume';
+export type pagesVariationsSkill = 'page-skills' | 'resume';
 
 export interface IPersonalInfoContact {
     id?: string;
@@ -19,10 +20,24 @@ export interface IPersonalInfoAddress {
     url: string;
 }
 
+export interface IPersonalInfoSkill {
+    label: string;
+    icon: string;
+    xpLevel: 1 | 2 | 3;
+    docsUrl: string;
+    colors: {
+        label: string;
+        progress: string;
+    };
+    category: 'server-side' | 'client-side' | 'tests' | 'others';
+    visibility: pagesVariationsSkill[];
+}
+
 export interface IPersonalInfo {
     name: string;
     role: string;
     aboutMe: string;
     address: IPersonalInfoAddress;
     contacts: IPersonalInfoContact[];
+    skills: IPersonalInfoSkill[];
 }

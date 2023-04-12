@@ -8,7 +8,7 @@
         :exact-active-class="props.activeByHash ? undefined : 'link-active'"
         @click="emits('click:link')"
     >
-        <span><slot name="default"></slot></span>
+        <span><div class="bg"></div><slot name="default"></slot></span>
     </nuxt-link>
 </template>
 
@@ -53,6 +53,7 @@ watch(route, () => {
 
 <style lang="scss" scoped>
 .link {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -65,10 +66,23 @@ watch(route, () => {
     transition: all 0.1s;
     height: 38px;
 
+    .bg{
+        width: 0;
+    }
+
     &-active,
     &:hover {
-        background: var(--accent);
-        color: var(--text-accent);
+        .bg{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: var(--accent);
+            color: var(--text-accent);
+            border-radius: 999rem;
+        }
     }
 }
 </style>

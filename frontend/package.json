@@ -9,12 +9,13 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
+        "@nuxt/devtools": "^0.4.0",
         "@nuxt/image-edge": "^1.0.0-28004510.a0dc8e8",
         "@nuxtjs/color-mode": "^3.2.0",
         "@nuxtjs/plausible": "^0.2.0",
         "@pinia/nuxt": "^0.4.7",
         "@vueuse/nuxt": "^9.13.0",
-        "nuxt": "^3.3.2",
+        "nuxt": "^3.4.0",
         "nuxt-delay-hydration": "^1.1.4",
         "nuxt-icon": "^0.3.3",
         "nuxt-icons": "^3.1.0",
