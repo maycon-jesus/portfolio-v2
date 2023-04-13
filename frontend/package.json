@@ -9,18 +9,22 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
+        "@mdi/js": "^7.2.96",
+        "@nuxt/devtools": "^0.4.0",
         "@nuxt/image-edge": "^1.0.0-28004510.a0dc8e8",
         "@nuxtjs/color-mode": "^3.2.0",
         "@nuxtjs/plausible": "^0.2.0",
         "@pinia/nuxt": "^0.4.7",
         "@vueuse/nuxt": "^9.13.0",
-        "nuxt": "^3.3.2",
+        "nuxt": "^3.4.0",
         "nuxt-delay-hydration": "^1.1.4",
         "nuxt-icon": "^0.3.3",
         "nuxt-icons": "^3.1.0",
         "nuxt-viewport": "^2.0.4",
         "pinia": "^2.0.33",
         "sass": "^1.60.0",
-        "typescript": "^5.0.3"
+        "typescript": "^5.0.3",
+        "vite-plugin-vuetify": "^1.0.2",
+        "vuetify": "^3.1.14"
     }
 }

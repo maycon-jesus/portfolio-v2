@@ -6,14 +6,14 @@
                 mobile: isMobile,
             }"
         >
-            <h1
+            <h2
                 :class="{
                     'text-h2': !isMobile,
                     'text-h3': isMobile,
                 }"
             >
                 Olá, me chamo <strong>Maycon Jesus</strong>
-            </h1>
+            </h2>
             <p class="text-h6">
                 Sou um desenvolvedor front-end de Conselheiro Lafaiete, Minas
                 Gerais que controi aplicações visando o sucesso do produto como
@@ -31,7 +31,7 @@
                     target="_blank"
                     >GitHub</MyButton
                 >
-                <MyButton :to="{ name: 'index', hash: '#contato' }"
+                <MyButton :to="{ name: 'contato' }"
                     >Contato</MyButton
                 >
                 <MyButton disabled>Projetos</MyButton>
@@ -81,6 +81,7 @@ section {
     background-image: url(/img/home/bg.svg);
     background-size: 1200px;
     background-blend-mode: color-dodge;
+    background-repeat: repeat;
 
     h1 {
         text-align: center;

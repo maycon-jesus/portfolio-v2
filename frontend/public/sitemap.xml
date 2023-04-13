@@ -3,27 +3,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-
       <loc>https://mayconjesus.dev</loc>
-
-      <lastmod>2023-04-08</lastmod>
-
-      <changefreq>monthly</changefreq>
-
       <priority>1</priority>
-
    </url>
 
    <url>
-
-      <loc>https://mayconjesus.dev/skills</loc>
-
-      <lastmod>2023-04-08</lastmod>
-
-      <changefreq>monthly</changefreq>
-
+      <loc>https://mayconjesus.dev/experiencia</loc>
       <priority>0.5</priority>
+   </url>
 
+   <url>
+      <loc>http://localhost:3000/sobre-mim</loc>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>http://localhost:3000/contato</loc>
+      <priority>0.5</priority>
    </url>
 
 </urlset>

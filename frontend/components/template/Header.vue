@@ -1,36 +1,37 @@
 <template>
     <div class="header-wrapper">
         <header>
-            <img
-                v-if="menuMobile"
-                class="logo"
-                :src="logoUrl"
-                alt="Logo Maycon Jesus"
-                height="38"
-                width="25.44"
-            />
-            <img
-                v-else
-                class="logo"
-                :src="logoUrl"
-                alt="Logo Maycon Jesus"
-                height="38"
-                width="170.7"
-            />
+            <nuxt-link to="/" :style="{ height: '38px' }">
+                <img
+                    v-if="menuMobile"
+                    class="logo"
+                    :src="logoUrl"
+                    alt="Logo Maycon Jesus"
+                    height="38"
+                    width="25.44"
+                />
+                <img
+                    v-else
+                    class="logo"
+                    :src="logoUrl"
+                    alt="Logo Maycon Jesus"
+                    height="38"
+                    width="170.7"
+                />
+            </nuxt-link>
 
             <!-- Desktop -->
             <div class="links" v-if="!menuMobile">
                 <TemplateHeaderMenuItem
                     v-for="(item, i) in links"
                     :to="item.to"
-                    :active-by-hash="item.activeByHash"
                     :key="i"
                     >{{ item.text }}</TemplateHeaderMenuItem
                 >
             </div>
-            <button v-if="!menuMobile" class="download-cv text-button">
+            <!-- <button v-if="!menuMobile" class="download-cv text-button">
                 Currículo
-            </button>
+            </button> -->
 
             <!-- MOBILE -->
             <button
@@ -59,14 +60,13 @@
                     <TemplateHeaderMenuItem
                         v-for="(item, i) in links"
                         :to="item.to"
-                        :active-by-hash="item.activeByHash"
                         :key="i"
                         @click:link="drawerIsOpen = false"
                         >{{ item.text }}</TemplateHeaderMenuItem
                     >
-                    <button class="download-cv-mobile text-button">
+                    <!-- <button class="download-cv-mobile text-button">
                         Currículo
-                    </button>
+                    </button> -->
                 </div>
             </MyExpandTransitionY>
         </header>
@@ -82,22 +82,18 @@ const menuMobile = computed(() => $viewport.isLessThan('md'));
 const links: {
     text: string;
     to: RouteLocationRaw;
-    activeByHash?: boolean;
 }[] = [
     {
         text: 'Inicio',
         to: {
             name: 'index',
         },
-        activeByHash: true,
     },
     {
         text: 'Sobre mim',
         to: {
-            name: 'index',
-            hash: '#sobre-mim',
+            name: 'sobre-mim',
         },
-        activeByHash: true,
     },
     {
         text: 'Experiência',
@@ -114,10 +110,8 @@ const links: {
     {
         text: 'Contato',
         to: {
-            name: 'index',
-            hash: '#contato',
+            name: 'contato'
         },
-        activeByHash: true,
     },
 ];
 
@@ -158,6 +152,8 @@ header {
     display: flex;
     flex-flow: row wrap;
     z-index: 1000;
+
+    view-transition-name: header;
 }
 
 .logo {

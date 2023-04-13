@@ -1,17 +1,19 @@
 <template>
-    <component
-        :is="props.component ?? 'h2'"
-        class="title"
-        :class="{
-            'text-h3': !isMobile,
-            'text-h4': isMobile,
-        }"
-    >
-        {{ props.title }}
-    </component>
-    <p v-if="props.description" class="text-h6 title-desc">
-        {{ props.description }}
-    </p>
+    <div>
+        <component
+            :is="props.component ?? 'h2'"
+            class="title"
+            :class="{
+                'text-h3': !isMobile,
+                'text-h4': isMobile,
+            }"
+        >
+            {{ props.title }}
+        </component>
+        <p v-if="props.description" class="text-h6 title-desc">
+            {{ props.description }}
+        </p>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -49,6 +51,7 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
+    margin: auto;
     margin-bottom: 3.5rem;
 }
 
@@ -69,5 +72,6 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     max-width: 44rem;
     text-align: center;
     color: var(--text-medium-background);
+    margin: auto;
 }
 </style>

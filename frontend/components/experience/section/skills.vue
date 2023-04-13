@@ -3,7 +3,7 @@
         <SectionTitle title="Tecnologias que uso" component="h1"></SectionTitle>
 
         <p class="text-h6 subtitle">
-            Abaixo estão algumas das tecnologias que ja trabalhei, mas não me
+            Conheça um pouco tecnologias que trabalho, mas não me
             limito à apenas essas.<br />Para saber sobre alguma em específico
             entre em contato comigo!
         </p>

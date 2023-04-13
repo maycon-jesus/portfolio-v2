@@ -115,6 +115,7 @@ const props = defineProps({
     color: #fff;
     color: var(--label-color);
     font-weight: bold;
+    line-height: normal;
 }
 
 .skill-bar {
