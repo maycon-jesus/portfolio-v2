@@ -34,7 +34,7 @@ section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 8rem 20px;
+    padding: 4rem 20px;
 
     .content {
         display: flex;
@@ -52,7 +52,7 @@ section {
     }
 
     &.mobile {
-        padding: 4rem 20px;
+        padding: 2rem 20px;
         .content {
             margin-top: 3.5rem;
 

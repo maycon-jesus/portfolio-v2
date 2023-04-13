@@ -1,11 +1,8 @@
 <template>
     <nuxt-link
         class="link text-button"
-        :class="{
-            'link-active': active,
-        }"
         :to="$props.to"
-        :exact-active-class="props.activeByHash ? undefined : 'link-active'"
+        exact-active-class="link-active"
         @click="emits('click:link')"
     >
         <span><div class="bg"></div><slot name="default"></slot></span>
@@ -14,41 +11,13 @@
 
 <script lang="ts" setup>
 import { RouteLocationRaw, RouteLocationNamedRaw } from 'vue-router';
-const route = useRoute();
-
-const props = withDefaults(
-    defineProps<{
+defineProps<{
         to: RouteLocationRaw;
-        activeByHash: boolean;
-    }>(),
-    {
-        activeByHash: false,
-    },
-);
+    }>()
 
 const emits = defineEmits<{
     (e: 'click:link'): void;
 }>();
-
-const active = ref(false);
-
-const updateActive = () => {
-    if (props.activeByHash && props.to && typeof props.to === 'object') {
-        const propsTo = props.to as RouteLocationNamedRaw;
-        let isActive = true;
-        const propsRouteHash = props.to.hash || '';
-        if (propsRouteHash != route.hash) isActive = false;
-        if (propsTo.name != route.name) isActive = false;
-        active.value = isActive;
-    }
-};
-
-onMounted(() => {
-    updateActive();
-});
-watch(route, () => {
-    updateActive();
-});
 </script>
 
 <style lang="scss" scoped>
@@ -65,6 +34,7 @@ watch(route, () => {
     text-decoration: none;
     transition: all 0.1s;
     height: 38px;
+    line-height: normal;
 
     .bg{
         width: 0;

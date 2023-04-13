@@ -2,7 +2,7 @@
     <section id="sobre-mim" :class="{ mobile: isMobile }">
         <SectionTitle
             title="Sobre mim"
-            description="Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais em termos de programação e tecnologia."
+            description="Conheça um pouquinho mais sobre mim, o que faço e minhas habilidades atuais em termos de programação e tecnologia."
         ></SectionTitle>
         <div class="content">
             <div class="my-info">
@@ -39,7 +39,7 @@
                     em entrar em contato comigo.
                 </p>
                 <div class="actions-bar">
-                    <MyButton :to="{ name: 'index', hash: '#contato' }"
+                    <MyButton :to="{ name: 'contato' }"
                         >Contato</MyButton
                     >
                 </div>
@@ -79,7 +79,7 @@ section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 8rem 20px;
+    padding: 4rem 20px;
 
     .subtitle {
         font-weight: bold;
@@ -125,7 +125,7 @@ section {
     }
 
     &.mobile {
-        padding: 4rem 20px;
+        padding: 2rem 20px;
         .content {
             flex-flow: column nowrap;
             align-items: center;

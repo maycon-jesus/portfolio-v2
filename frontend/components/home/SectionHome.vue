@@ -31,7 +31,7 @@
                     target="_blank"
                     >GitHub</MyButton
                 >
-                <MyButton :to="{ name: 'index', hash: '#contato' }"
+                <MyButton :to="{ name: 'contato' }"
                     >Contato</MyButton
                 >
                 <MyButton disabled>Projetos</MyButton>
@@ -81,6 +81,7 @@ section {
     background-image: url(/img/home/bg.svg);
     background-size: 1200px;
     background-blend-mode: color-dodge;
+    background-repeat: repeat;
 
     h1 {
         text-align: center;

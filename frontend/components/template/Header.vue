@@ -25,7 +25,6 @@
                 <TemplateHeaderMenuItem
                     v-for="(item, i) in links"
                     :to="item.to"
-                    :active-by-hash="item.activeByHash"
                     :key="i"
                     >{{ item.text }}</TemplateHeaderMenuItem
                 >
@@ -61,7 +60,6 @@
                     <TemplateHeaderMenuItem
                         v-for="(item, i) in links"
                         :to="item.to"
-                        :active-by-hash="item.activeByHash"
                         :key="i"
                         @click:link="drawerIsOpen = false"
                         >{{ item.text }}</TemplateHeaderMenuItem
@@ -84,22 +82,18 @@ const menuMobile = computed(() => $viewport.isLessThan('md'));
 const links: {
     text: string;
     to: RouteLocationRaw;
-    activeByHash?: boolean;
 }[] = [
     {
         text: 'Inicio',
         to: {
             name: 'index',
         },
-        activeByHash: true,
     },
     {
         text: 'Sobre mim',
         to: {
-            name: 'index',
-            hash: '#sobre-mim',
+            name: 'sobre-mim',
         },
-        activeByHash: true,
     },
     {
         text: 'Experiência',
@@ -116,10 +110,8 @@ const links: {
     {
         text: 'Contato',
         to: {
-            name: 'index',
-            hash: '#contato',
+            name: 'contato'
         },
-        activeByHash: true,
     },
 ];
 

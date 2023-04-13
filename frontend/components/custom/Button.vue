@@ -68,6 +68,7 @@ const isMobile = computed(() => $viewport.isLessThan('md'));
     transition: all 0.1s;
     text-decoration: none;
     padding: 16px 2rem;
+    line-height: normal;
 
     &-mobile {
         padding: 12px 1.5rem;

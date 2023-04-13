@@ -1,3 +1,5 @@
+import VitePluginVuetify from 'vite-plugin-vuetify';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     ssr: true,
@@ -19,6 +21,10 @@ export default defineNuxtConfig({
         '~/assets/scss/themes.scss',
         '~/assets/scss/typography.scss',
         '~/assets/scss/uistate.scss',
+
+        // Primevue
+        // '@mdi/font/css/materialdesignicons.css',
+        'vuetify/styles',
     ],
 
     app: {
@@ -144,7 +150,7 @@ export default defineNuxtConfig({
         },
     },
 
-    plugins: [],
+    plugins: ['~/plugins/vuetify'],
 
     components: {
         dirs: [
@@ -203,5 +209,17 @@ export default defineNuxtConfig({
 
     experimental: {
         viewTransition: true,
+    },
+
+    vite: {
+        plugins: [
+            VitePluginVuetify({
+                autoImport: true,
+            }),
+        ],
+    },
+
+    build: {
+        transpile: ['vuetify'],
     },
 });
