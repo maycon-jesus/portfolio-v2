@@ -152,8 +152,6 @@ header {
     display: flex;
     flex-flow: row wrap;
     z-index: 1000;
-
-    view-transition-name: header;
 }
 
 .logo {
