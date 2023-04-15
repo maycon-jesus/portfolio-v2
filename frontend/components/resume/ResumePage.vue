@@ -12,7 +12,8 @@
                     :address="props.personalInfo.address"
                     :role="props.personalInfo.role"
                 />
-                <ResumeSkills :skills="props.personalInfo.skills"/>
+                <ResumeSkills :skills="props.personalInfo.skills" />
+                <ResumeWorks :works="props.personalInfo.works" />
             </div>
         </div>
     </PrintPage>

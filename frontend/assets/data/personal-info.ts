@@ -1,6 +1,7 @@
 import { IPersonalInfo } from '~~/types/personalInfo';
 import { contacts } from './contacts';
 import { skills } from './skills';
+import { works } from './works';
 
 export const personalInfo: IPersonalInfo = {
     name: 'Maycon Jesus Pinto',
@@ -15,4 +16,5 @@ export const personalInfo: IPersonalInfo = {
     },
     contacts: contacts,
     skills: skills,
+    works: works,
 };

@@ -21,6 +21,7 @@ export interface IPersonalInfoAddress {
 }
 
 export interface IPersonalInfoSkill {
+    id: string;
     label: string;
     icon: string;
     xpLevel: 1 | 2 | 3;
@@ -33,6 +34,20 @@ export interface IPersonalInfoSkill {
     visibility: pagesVariationsSkill[];
 }
 
+export interface IPersonalInfoWork {
+    org: {
+        name: string;
+        url?: string;
+        logoUrl?: string;
+    };
+    role: string;
+    local: string;
+    startDate: string;
+    endDate: string;
+    description?: string;
+    skills: string[];
+}
+
 export interface IPersonalInfo {
     name: string;
     role: string;
@@ -40,4 +55,5 @@ export interface IPersonalInfo {
     address: IPersonalInfoAddress;
     contacts: IPersonalInfoContact[];
     skills: IPersonalInfoSkill[];
+    works: IPersonalInfoWork[];
 }
