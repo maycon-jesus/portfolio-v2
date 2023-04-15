@@ -11,18 +11,10 @@ export const works: IPersonalInfoWork[] = [
         role: 'Desenvolvedor front-end pleno',
         startDate: '2022',
         endDate: 'Agora',
-        description: 'Teste de descrição',
-        skills: [
-            'HTML5',
-            'CSS3',
-            'Vue',
-            'Vuetify',
-            'Javascript',
-            'Typescript',
-            'Cypress',
-            'Playwright',
-            'Jest',
-        ],
+        skills: ['HTML5', 'CSS3', 'Vue', 'Vuetify', 'Javascript', 'Typescript', 'Cypress', 'Playwright', 'Jest'],
+        meta: {
+            orgNameGender: 'female',
+        },
     },
     {
         org: {
@@ -34,15 +26,10 @@ export const works: IPersonalInfoWork[] = [
         role: 'Desenvolvedor front-end júnior',
         startDate: '2022',
         endDate: '2022',
-        skills: [
-            'HTML5',
-            'CSS3',
-            'Vue',
-            'Vuetify',
-            'Javascript',
-            'Cypress',
-            'Jest',
-        ],
+        skills: ['HTML5', 'CSS3', 'Vue', 'Vuetify', 'Javascript', 'Cypress', 'Jest'],
+        meta: {
+            orgNameGender: 'female',
+        },
     },
     {
         org: {
@@ -55,6 +42,10 @@ export const works: IPersonalInfoWork[] = [
         description:
             'Foi um ótimo lugar onde tive a oportunidade aprimorar minhas soft skills de comunicação, liderança e trabalho em equipe.',
         skills: [],
+        meta: {
+            orgNameGender: 'female',
+            military: true,
+        },
     },
     {
         org: {
@@ -64,15 +55,9 @@ export const works: IPersonalInfoWork[] = [
         role: 'Desenvolvedor full-stack',
         startDate: '2021',
         endDate: '2022',
-        skills: [
-            'HTML5',
-            'CSS3',
-            'Vue',
-            'Vuetify',
-            'Javascript',
-            'Typescript',
-            'MySQL',
-            'Gulp',
-        ],
+        skills: ['HTML5', 'CSS3', 'Vue', 'Vuetify', 'Javascript', 'Typescript', 'MySQL', 'Gulp'],
+        meta: {
+            orgNameGender: 'female',
+        },
     },
 ];
