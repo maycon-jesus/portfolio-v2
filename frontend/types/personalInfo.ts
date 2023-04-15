@@ -61,13 +61,21 @@ export interface IPersonalInfoTraining {
     description?: string;
 }
 
+export interface IPersonalInfoLanguage {
+    name: string;
+    level: string;
+}
+
 export interface IPersonalInfo {
     name: string;
     role: string;
+    nationality: string;
+    dateOfBirth: string;
     aboutMe: string;
     address: IPersonalInfoAddress;
     contacts: IPersonalInfoContact[];
     skills: IPersonalInfoSkill[];
     works: IPersonalInfoWork[];
     trainings: IPersonalInfoTraining[];
+    languages: IPersonalInfoLanguage[];
 }

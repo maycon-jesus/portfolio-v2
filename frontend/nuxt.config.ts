@@ -204,7 +204,7 @@ export default defineNuxtConfig({
     },
 
     devtools: {
-        enable: false,
+        enabled: false,
     },
 
     experimental: {
