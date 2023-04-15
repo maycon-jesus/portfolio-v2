@@ -21,6 +21,7 @@ export interface IPersonalInfoAddress {
 }
 
 export interface IPersonalInfoSkill {
+    id: string;
     label: string;
     icon: string;
     xpLevel: 1 | 2 | 3;
@@ -33,11 +34,48 @@ export interface IPersonalInfoSkill {
     visibility: pagesVariationsSkill[];
 }
 
+export interface IPersonalInfoWork {
+    org: {
+        name: string;
+        url?: string;
+        logoUrl?: string;
+    };
+    role: string;
+    local: string;
+    startDate: string;
+    endDate: string;
+    description?: string;
+    skills: string[];
+}
+
+export interface IPersonalInfoTraining {
+    school: {
+        name: string;
+        url?: string;
+        logoUrl?: string;
+    };
+    title: string;
+    local: string;
+    startDate: string;
+    endDate: string;
+    description?: string;
+}
+
+export interface IPersonalInfoLanguage {
+    name: string;
+    level: string;
+}
+
 export interface IPersonalInfo {
     name: string;
     role: string;
+    nationality: string;
+    dateOfBirth: string;
     aboutMe: string;
     address: IPersonalInfoAddress;
     contacts: IPersonalInfoContact[];
     skills: IPersonalInfoSkill[];
+    works: IPersonalInfoWork[];
+    trainings: IPersonalInfoTraining[];
+    languages: IPersonalInfoLanguage[];
 }

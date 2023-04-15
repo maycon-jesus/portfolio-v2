@@ -2,6 +2,7 @@ import { IPersonalInfoSkill } from '~~/types/personalInfo';
 
 export const skills: IPersonalInfoSkill[] = [
     {
+        id: 'html5',
         label: 'HTML 5',
         icon: 'html5',
         xpLevel: 3,
@@ -14,6 +15,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'css3',
         label: 'CSS 3',
         icon: 'css3',
         xpLevel: 3,
@@ -26,6 +28,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'javascript',
         label: 'Javascript',
         icon: 'javascript',
         xpLevel: 3,
@@ -38,6 +41,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'vue',
         label: 'Vue | v2 e v3',
         icon: 'vuejs',
         xpLevel: 3,
@@ -50,6 +54,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'nuxt',
         label: 'Nuxt | v2 e v3',
         icon: 'nuxt',
         xpLevel: 3,
@@ -62,6 +67,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'sass',
         label: 'Sass',
         icon: 'sass',
         xpLevel: 2,
@@ -74,6 +80,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'react',
         label: 'React',
         icon: 'react',
         xpLevel: 1,
@@ -86,6 +93,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'express',
         label: 'Express',
         icon: 'express',
         xpLevel: 3,
@@ -98,6 +106,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'nodejs',
         label: 'Node.js',
         icon: 'nodejs',
         xpLevel: 2,
@@ -110,6 +119,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'typescript',
         label: 'Typescript',
         icon: 'typescript',
         xpLevel: 2,
@@ -122,6 +132,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'nest',
         label: 'Nest',
         icon: 'nest',
         xpLevel: 1,
@@ -134,6 +145,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'mysql',
         label: 'MySQL',
         icon: 'mysql',
         xpLevel: 2,
@@ -146,6 +158,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'cypress',
         label: 'Cypress',
         icon: 'cypress',
         xpLevel: 3,
@@ -158,6 +171,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'playwright',
         label: 'Playwright com Typescript',
         icon: 'playwright',
         xpLevel: 3,
@@ -170,6 +184,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'jest',
         label: 'Jest',
         icon: 'jest',
         xpLevel: 2,
@@ -182,6 +197,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'github',
         label: 'Github',
         icon: 'github',
         xpLevel: 3,
@@ -194,6 +210,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'gitlab',
         label: 'Gitlab',
         icon: 'gitlab',
         xpLevel: 3,
@@ -206,6 +223,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'npm',
         label: 'npm',
         icon: 'npm',
         xpLevel: 2,
@@ -218,6 +236,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'git',
         label: 'Git',
         icon: 'git',
         xpLevel: 2,
@@ -230,6 +249,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills', 'resume'],
     },
     {
+        id: 'postman',
         label: 'Postman',
         icon: 'postman',
         xpLevel: 2,
@@ -242,6 +262,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'puppeteer',
         label: 'Puppeteer',
         icon: 'puppeteer',
         xpLevel: 2,
@@ -254,6 +275,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'gulp',
         label: 'Gulp',
         icon: 'gulp',
         xpLevel: 1,
@@ -266,6 +288,7 @@ export const skills: IPersonalInfoSkill[] = [
         visibility: ['page-skills'],
     },
     {
+        id: 'docker',
         label: 'Docker',
         icon: 'docker',
         xpLevel: 1,

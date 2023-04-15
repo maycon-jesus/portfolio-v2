@@ -5,6 +5,13 @@
             <div class="col-1">
                 <ResumeAboutMe :text="props.personalInfo.aboutMe" />
                 <hr />
+                <ResumePersonalData
+                    :date-of-birth="personalInfo.dateOfBirth"
+                    :nationality="personalInfo.nationality"
+                />
+                <hr />
+                <ResumeLanguages :languages="personalInfo.languages" />
+                <hr />
             </div>
             <div class="col-2">
                 <ResumeProfile
@@ -12,7 +19,9 @@
                     :address="props.personalInfo.address"
                     :role="props.personalInfo.role"
                 />
-                <ResumeSkills :skills="props.personalInfo.skills"/>
+                <ResumeSkills :skills="props.personalInfo.skills" />
+                <ResumeWorks :works="props.personalInfo.works" />
+                <ResumeTrainings :trainings="props.personalInfo.trainings" />
             </div>
         </div>
     </PrintPage>

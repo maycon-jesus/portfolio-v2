@@ -17,6 +17,7 @@ specifiers:
   sass: ^1.60.0
   typescript: ^5.0.3
   vite-plugin-vuetify: ^1.0.2
+  vuedraggable: ^4.1.0
   vuetify: ^3.1.14
 
 devDependencies:
@@ -36,6 +37,7 @@ devDependencies:
   sass: 1.62.0
   typescript: 5.0.4
   vite-plugin-vuetify: 1.0.2_daewddk2qlo7eftkrtvxhoqhn4
+  vuedraggable: 4.1.0_vue@3.2.47
   vuetify: 3.1.14_zhdigtlnoj4qfl4bi7c6fb2bly
 
 packages:
@@ -5669,6 +5671,10 @@ packages:
       smart-buffer: 4.2.0
     dev: true
 
+  /sortablejs/1.14.0:
+    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
+    dev: true
+
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -6509,6 +6515,15 @@ packages:
       '@vue/runtime-dom': 3.2.47
       '@vue/server-renderer': 3.2.47_vue@3.2.47
       '@vue/shared': 3.2.47
+    dev: true
+
+  /vuedraggable/4.1.0_vue@3.2.47:
+    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==}
+    peerDependencies:
+      vue: ^3.0.1
+    dependencies:
+      sortablejs: 1.14.0
+      vue: 3.2.47
     dev: true
 
   /vuetify/3.1.14_zhdigtlnoj4qfl4bi7c6fb2bly:

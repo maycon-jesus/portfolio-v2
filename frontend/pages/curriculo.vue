@@ -17,10 +17,15 @@ const personalInfoResume = computed<IPersonalInfo>(() => {
     return {
         name: personalInfo.name,
         role: personalInfo.role,
+        dateOfBirth: personalInfo.dateOfBirth,
+        nationality: personalInfo.nationality,
         address: personalInfo.address,
         aboutMe: personalInfo.aboutMe,
         contacts: personalInfo.contactsForPage('resume'),
-        skills: personalInfo.skillsForPage('resume')
+        skills: personalInfo.skillsForPage('resume'),
+        works: personalInfo.works,
+        trainings: personalInfo.trainings,
+        languages: personalInfo.languages,
     };
 });
 </script>

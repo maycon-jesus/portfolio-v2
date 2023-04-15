@@ -2,32 +2,10 @@
     <div class="page-wrapper">
         <div class="pa-5">
             <v-expansion-panels>
-                <v-expansion-panel
-                    title="Informações gerais"
-                >
-                <v-expansion-panel-text>
-                    <v-container >
-                        <v-row>
-                            <v-col cols="12">
-                                <v-text-field label="Cargo" v-model="personalInfoCustom.role"></v-text-field>
-                                <v-row>
-                                    <v-col cols="12">
-                                        <p class="text-subtitle-2">Moradia</p>
-                                    </v-col>
-                                </v-row>
-                                <v-row>
-                                    <v-col cols="6">
-                                        <v-text-field label="Cidade" v-model="personalInfoCustom.address.city"></v-text-field>
-                                    </v-col>
-                                    <v-col cols="6">
-                                <v-text-field label="Estado" v-model="personalInfoCustom.address.state"></v-text-field>
-                                    </v-col>
-                                </v-row>
-                            </v-col>
-                        </v-row>
-                    </v-container>
-                </v-expansion-panel-text>
-                </v-expansion-panel>
+                <ResumeAdminConfigGeneral />
+                <ResumeAdminConfigSkills />
+
+                <!-- Skills -->
             </v-expansion-panels>
         </div>
         <ResumePage class="resume-page" :personal-info="personalInfoResume" />
@@ -35,10 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import { usePersonalInfoStore } from '~/states/personal-info';
+import { usePersonalInfoResumeStore } from '~/states/personal-info-resume';
 import { IPersonalInfo } from '~~/types/personalInfo';
-const personalInfo = usePersonalInfoStore();
-const personalInfoCustom = ref(personalInfo);
+const personalInfo = usePersonalInfoResumeStore();
 
 definePageMeta({
     layout: 'clean',
@@ -47,11 +24,12 @@ definePageMeta({
 const personalInfoResume = computed<IPersonalInfo>(() => {
     return {
         name: personalInfo.name,
-        role: personalInfoCustom.value.role,
+        role: personalInfo.role,
         address: personalInfo.address,
         aboutMe: personalInfo.aboutMe,
-        contacts: personalInfo.contactsForPage('resume'),
-        skills: personalInfo.skillsForPage('resume'),
+        contacts: personalInfo.contactsForResume,
+        skills: personalInfo.skillsForResume,
+        works: personalInfo.works,
     };
 });
 </script>

@@ -29,9 +29,13 @@
                     >{{ item.text }}</TemplateHeaderMenuItem
                 >
             </div>
-            <!-- <button v-if="!menuMobile" class="download-cv text-button">
+            <a
+                v-if="!menuMobile"
+                class="download-cv text-button"
+                href="/curriculo.pdf"
+            >
                 Currículo
-            </button> -->
+            </a>
 
             <!-- MOBILE -->
             <button
@@ -64,9 +68,12 @@
                         @click:link="drawerIsOpen = false"
                         >{{ item.text }}</TemplateHeaderMenuItem
                     >
-                    <!-- <button class="download-cv-mobile text-button">
+                    <a
+                        class="download-cv-mobile text-button"
+                        href="/curriculo.pdf"
+                    >
                         Currículo
-                    </button> -->
+                    </a>
                 </div>
             </MyExpandTransitionY>
         </header>
@@ -110,7 +117,7 @@ const links: {
     {
         text: 'Contato',
         to: {
-            name: 'contato'
+            name: 'contato',
         },
     },
 ];
@@ -152,8 +159,6 @@ header {
     display: flex;
     flex-flow: row wrap;
     z-index: 1000;
-
-    view-transition-name: header;
 }
 
 .logo {
@@ -180,6 +185,7 @@ header {
     color: var(--accent);
     transition: all 0.1s;
     padding-inline: 15px;
+    text-decoration: none;
 
     &:hover {
         background-color: var(--accent--35-opacity);
@@ -197,6 +203,7 @@ header {
     padding-inline: 15px;
     height: 38px;
     width: 100%;
+    text-decoration: none;
 
     &:hover {
         background-color: var(--accent--35-opacity);

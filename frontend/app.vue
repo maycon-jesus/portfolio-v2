@@ -6,10 +6,11 @@
 
 <style>
 ::view-transition-old(root) {
-    animation-duration: 0ms;
+    animation: none;
+    opacity: 0;
 }
-
 ::view-transition-new(root) {
-    animation-duration: 0ms;
+    animation: none;
+    opacity: 1;
 }
 </style>

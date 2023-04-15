@@ -1,9 +1,13 @@
 import { IPersonalInfo } from '~~/types/personalInfo';
 import { contacts } from './contacts';
 import { skills } from './skills';
+import { works } from './works';
+import { trainings } from './trainings';
 
 export const personalInfo: IPersonalInfo = {
     name: 'Maycon Jesus Pinto',
+    dateOfBirth: '07/01/2003',
+    nationality: 'Brasileiro',
     role: 'Desenvolvedor WEB front-end',
     aboutMe:
         'Olá sou um desenvolvedor front-end com foco em frameworks reativos como o Vue.js e React. Meu foco é oferecer um trabalho de qualidade que visa o sucesso do produto como um todo.',
@@ -15,4 +19,16 @@ export const personalInfo: IPersonalInfo = {
     },
     contacts: contacts,
     skills: skills,
+    works: works,
+    trainings: trainings,
+    languages: [
+        {
+            name: 'Português',
+            level: 'Nativo',
+        },
+        {
+            name: 'Inglês',
+            level: 'Iniciante avançado',
+        },
+    ],
 };
