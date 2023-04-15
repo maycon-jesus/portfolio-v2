@@ -46,6 +46,10 @@ export interface IPersonalInfoWork {
     endDate: string;
     description?: string;
     skills: string[];
+    meta: {
+        orgNameGender: 'female' | 'male';
+        military?: boolean;
+    };
 }
 
 export interface IPersonalInfoTraining {

@@ -3,23 +3,15 @@
         <SectionTitle title="Experiência" component="h2"></SectionTitle>
 
         <div class="content">
-            <ExperienceWorkCard
-                v-for="(work, index) in works"
-                :key="index"
-                :name="work.name"
-                :role="work.role"
-                :techs="work.techs"
-                :logo-url="work.logoUrl"
-                :org-url="work.orgUrl"
-                :start-date="work.startDate"
-                :end-date="work.endDate"
-            />
+            <ExperienceWorkCard v-for="(work, index) in personalInfo.works" :key="index" :work="work" />
         </div>
     </section>
 </template>
 
 <script setup>
-import works from '~/assets/data/works.json';
+import { usePersonalInfoStore } from '~/states/personal-info';
+
+const personalInfo = usePersonalInfoStore();
 const { $viewport } = useNuxtApp();
 const isMobile = computed(() => $viewport.isLessThan('sm'));
 </script>

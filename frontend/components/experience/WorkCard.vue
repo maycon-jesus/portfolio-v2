@@ -1,55 +1,67 @@
 <template>
-    <div class="work">
-        <div class="logo">
-            <img
-                v-if="props.logoUrl"
-                :src="props.logoUrl"
-                height="48"
-                width="48"
-            />
-        </div>
-        <div class="content">
-            <div>
-                <span>
-                    <component
-                        :is="props.orgUrl ? 'a' : 'span'"
-                        :href="props.orgUrl ?? undefined"
-                        :target="props.orgUrl ? '_blank' : undefined"
-                        class="org-name text-body-1"
-                    >
-                        {{ props.name }}
-                    </component>
-                    <span class="text-body-2 time"
-                        >({{ props.startDate }} - {{ props.endDate }})</span
-                    >
-                </span>
+    <MyIsBot>
+        <template #false>
+            <div class="work">
+                <div class="logo">
+                    <img v-if="props.work.org.logoUrl" :src="props.work.org.logoUrl" height="48" width="48" />
+                </div>
+                <div class="content">
+                    <div>
+                        <span>
+                            <component
+                                :is="work.org.url ? 'a' : 'span'"
+                                :href="work.org.url ?? undefined"
+                                :target="work.org.url ? '_blank' : undefined"
+                                class="org-name text-body-1"
+                            >
+                                {{ work.org.name }}
+                            </component>
+                            <span class="text-body-2 time">({{ work.startDate }} - {{ work.endDate }})</span>
+                        </span>
+                    </div>
+                    <div class="role">
+                        <span class="text-body-2">{{ work.role }}</span>
+                    </div>
+                    <span class=""></span>
+                    <div class="skills">
+                        <span class="text-body-2"><strong>Tecnologias:</strong></span>
+                        <span class="skill" v-for="(tech, index) in work.skills" :key="index">{{ tech }}</span>
+                    </div>
+                </div>
             </div>
-            <div class="role">
-                <span class="text-body-2">{{ props.role }}</span>
+        </template>
+        <template #true>
+            <div class="work-bot">
+                <div v-if="work.meta.military">
+                    <p>
+                        Servi o {{ work.org.name }} como {{ work.role }} no período de {{ work.startDate }} à
+                        {{ work.endDate }}.
+                    </p>
+                    <p v-if="work.description">{{ work.description }}</p>
+                </div>
+                <div v-else>
+                    <p v-if="work.endDate == 'Agora'" class="text-body-1">
+                        Trabalho {{ work.meta.orgNameGender === 'female' ? 'na' : 'no' }} {{ work.org.name }} como
+                        {{ work.role }} desde {{ work.startDate }}.
+                        <span v-if="work.skills.length > 0">Lá utilizo {{ work.skills.join(', ') }}.</span>
+                    </p>
+                    <p v-else class="text-body-1">
+                        Trabalhei {{ work.meta.orgNameGender === 'female' ? 'na' : 'no' }} {{ work.org.name }} como
+                        {{ work.role }} no período de {{ work.startDate }} à {{ work.endDate }}.
+                        <span v-if="work.skills.length > 0">Lá utilizei {{ work.skills.join(', ') }}.</span>
+                    </p>
+                    <p v-if="work.description">{{ work.description }}</p>
+                </div>
             </div>
-            <span class=""></span>
-            <div class="skills">
-                <span class="text-body-2"><strong>Tecnologias:</strong></span>
-                <span
-                    class="skill"
-                    v-for="(tech, index) in props.techs"
-                    :key="index"
-                    >{{ tech }}</span
-                >
-            </div>
-        </div>
-    </div>
+        </template>
+    </MyIsBot>
 </template>
 
 <script setup lang="ts">
+import { IPersonalInfoWork } from '~/types/personalInfo';
+
 const props = defineProps<{
-    name: string;
-    role: string;
-    techs: string[];
-    logoUrl?: string;
-    orgUrl?: string;
-    startDate: string;
-    endDate: string;
+    work: IPersonalInfoWork;
 }>();
 </script>
 
