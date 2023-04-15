@@ -13,12 +13,12 @@
    </url>
 
    <url>
-      <loc>http://localhost:3000/sobre-mim</loc>
+      <loc>https://mayconjesus.dev/sobre-mim</loc>
       <priority>0.5</priority>
    </url>
 
    <url>
-      <loc>http://localhost:3000/contato</loc>
+      <loc>https://mayconjesus.dev/contato</loc>
       <priority>0.5</priority>
    </url>
 
