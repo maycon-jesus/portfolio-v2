@@ -48,6 +48,19 @@ export interface IPersonalInfoWork {
     skills: string[];
 }
 
+export interface IPersonalInfoTraining {
+    school: {
+        name: string;
+        url?: string;
+        logoUrl?: string;
+    };
+    title: string;
+    local: string;
+    startDate: string;
+    endDate: string;
+    description?: string;
+}
+
 export interface IPersonalInfo {
     name: string;
     role: string;
@@ -56,4 +69,5 @@ export interface IPersonalInfo {
     contacts: IPersonalInfoContact[];
     skills: IPersonalInfoSkill[];
     works: IPersonalInfoWork[];
+    trainings: IPersonalInfoTraining[];
 }

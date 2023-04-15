@@ -22,6 +22,7 @@ const personalInfoResume = computed<IPersonalInfo>(() => {
         contacts: personalInfo.contactsForPage('resume'),
         skills: personalInfo.skillsForPage('resume'),
         works: personalInfo.works,
+        trainings: personalInfo.trainings,
     };
 });
 </script>

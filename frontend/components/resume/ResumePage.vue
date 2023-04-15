@@ -14,6 +14,7 @@
                 />
                 <ResumeSkills :skills="props.personalInfo.skills" />
                 <ResumeWorks :works="props.personalInfo.works" />
+                <ResumeTrainings :trainings="props.personalInfo.trainings" />
             </div>
         </div>
     </PrintPage>
