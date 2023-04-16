@@ -35,6 +35,7 @@ export interface IPersonalInfoSkill {
 }
 
 export interface IPersonalInfoWork {
+    id: number;
     org: {
         name: string;
         url?: string;
@@ -53,6 +54,7 @@ export interface IPersonalInfoWork {
 }
 
 export interface IPersonalInfoTraining {
+    id: number;
     school: {
         name: string;
         url?: string;

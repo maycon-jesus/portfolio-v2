@@ -20,8 +20,14 @@
                     :role="props.personalInfo.role"
                 />
                 <ResumeSkills :skills="props.personalInfo.skills" />
-                <ResumeWorks :works="props.personalInfo.works" />
-                <ResumeTrainings :trainings="props.personalInfo.trainings" />
+                <ResumeWorks
+                    v-if="personalInfo.works.length"
+                    :works="props.personalInfo.works"
+                />
+                <ResumeTrainings
+                    v-if="personalInfo.trainings.length"
+                    :trainings="props.personalInfo.trainings"
+                />
             </div>
         </div>
     </PrintPage>

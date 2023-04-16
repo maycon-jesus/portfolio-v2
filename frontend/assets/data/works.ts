@@ -2,6 +2,7 @@ import { IPersonalInfoWork } from '~/types/personalInfo';
 
 export const works: IPersonalInfoWork[] = [
     {
+        id: 4,
         org: {
             name: 'MOVA S.E.P.',
             url: 'https://mova.vc/',
@@ -17,6 +18,7 @@ export const works: IPersonalInfoWork[] = [
         },
     },
     {
+        id: 3,
         org: {
             name: 'MOVA S.E.P.',
             logoUrl: 'https://mova.vc/img/footer_logo_mova.svg',
@@ -32,6 +34,7 @@ export const works: IPersonalInfoWork[] = [
         },
     },
     {
+        id: 2,
         org: {
             name: 'Exército Brasileiro | TG 04-032',
         },
@@ -48,6 +51,7 @@ export const works: IPersonalInfoWork[] = [
         },
     },
     {
+        id: 1,
         org: {
             name: 'Freelancer',
         },
