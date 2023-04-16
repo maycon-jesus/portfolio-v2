@@ -4,7 +4,6 @@
         <main>
             <slot />
         </main>
-        <footer>ccc</footer>
     </div>
 </template>
 
