@@ -1,14 +1,19 @@
 <template>
     <div class="page-wrapper">
-        <div class="pa-5">
+        <div class="pa-5 hide-on-print">
             <v-expansion-panels>
                 <ResumeAdminConfigGeneral />
                 <ResumeAdminConfigSkills />
+                <ResumeAdminConfigWorks />
+                <ResumeAdminConfigTrainings />
 
                 <!-- Skills -->
             </v-expansion-panels>
         </div>
-        <ResumePage class="resume-page" :personal-info="personalInfoResume" />
+        <ResumePage
+            class="resume-page"
+            :personal-info="personalInfoResume"
+        />
     </div>
 </template>
 
@@ -25,11 +30,15 @@ const personalInfoResume = computed<IPersonalInfo>(() => {
     return {
         name: personalInfo.name,
         role: personalInfo.role,
+        dateOfBirth: personalInfo.dateOfBirth,
+        nationality: personalInfo.nationality,
         address: personalInfo.address,
         aboutMe: personalInfo.aboutMe,
         contacts: personalInfo.contactsForResume,
         skills: personalInfo.skillsForResume,
         works: personalInfo.works,
+        languages: personalInfo.languages,
+        trainings: personalInfo.trainings,
     };
 });
 </script>
@@ -47,6 +56,10 @@ const personalInfoResume = computed<IPersonalInfo>(() => {
 @media print {
     .page-wrapper {
         padding: 0;
+    }
+
+    .hide-on-print {
+        display: none;
     }
 }
 </style>

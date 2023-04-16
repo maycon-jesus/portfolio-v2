@@ -78,8 +78,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: 'og:image:alt',
-                    content:
-                        'Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja.',
+                    content: 'Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja.',
                 },
                 {
                     name: 'apple-mobile-web-app-title',
@@ -128,10 +127,6 @@ export default defineNuxtConfig({
                     color: '#F5841A',
                 },
                 {
-                    rel: 'canonical',
-                    href: 'https://mayconjesus.dev',
-                },
-                {
                     rel: 'preconnect',
                     href: 'https://fonts.gstatic.com',
                 },
@@ -144,7 +139,7 @@ export default defineNuxtConfig({
             script: [
                 {
                     src: '//code.tidio.co/7i8ttqso1dw0edjcezyvr4l5fdidp3ly.js',
-                    async: true,
+                    defer: true,
                 },
             ],
         },
