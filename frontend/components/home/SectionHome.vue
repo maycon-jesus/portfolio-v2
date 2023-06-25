@@ -67,6 +67,17 @@ const { $viewport } = useNuxtApp();
 const githubContact = contacts.find((c) => c.id === 'github');
 
 const isMobile = computed(() => $viewport.isLessThan('md'));
+
+useHead({
+  link: [
+    {
+      key: 'load-home-bg',
+      rel: "preload",
+      href: "/img/home/bg.svg",
+      as: "image"
+    }
+  ]
+})
 </script>
 
 <style lang="scss" scoped>

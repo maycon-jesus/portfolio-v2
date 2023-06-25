@@ -17,9 +17,6 @@ devDependencies:
   '@nuxtjs/color-mode':
     specifier: ^3.3.0
     version: 3.3.0
-  '@nuxtjs/plausible':
-    specifier: ^0.2.1
-    version: 0.2.1
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(typescript@5.1.3)(vue@3.3.4)
@@ -1252,18 +1249,6 @@ packages:
       '@nuxt/kit': 3.6.0
       lodash.template: 4.5.0
       pathe: 1.1.1
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
-  /@nuxtjs/plausible@0.2.1:
-    resolution: {integrity: sha512-1AyV9woFeZKBhwYy05S7NBk4jeAXzWcF/SIK/S/GZ8C86G8x7f2hR2eJi9FRRQYGwHutBx2guU4tZAW4J71Azg==}
-    dependencies:
-      '@nuxt/kit': 3.6.0
-      defu: 6.1.2
-      pathe: 1.1.1
-      plausible-tracker: 0.3.8
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -5171,11 +5156,6 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.0
       pathe: 1.1.1
-    dev: true
-
-  /plausible-tracker@0.3.8:
-    resolution: {integrity: sha512-lmOWYQ7s9KOUJ1R+YTOR3HrjdbxIS2Z4de0P/Jx2dQPteznJl2eX3tXxKClpvbfyGP59B5bbhW8ftN59HbbFSg==}
-    engines: {node: '>=10'}
     dev: true
 
   /postcss-calc@9.0.1(postcss@8.4.24):
