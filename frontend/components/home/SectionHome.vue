@@ -40,7 +40,7 @@
         <div class="image">
             <NuxtImg
                 v-if="isMobile"
-                src="/img/home/eu-h404.png"
+                src="/img/home/eu-h200.png"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="200"
@@ -49,7 +49,7 @@
             ></NuxtImg>
             <NuxtImg
                 v-else
-                src="/img/home/eu-h250.png"
+                src="/img/home/eu-h250.webp"
                 format="webp"
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="250"
