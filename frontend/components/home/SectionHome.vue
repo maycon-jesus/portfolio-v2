@@ -45,6 +45,7 @@
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="200"
                 width="202"
+                preload
             ></NuxtImg>
             <NuxtImg
                 v-else
@@ -53,6 +54,7 @@
                 alt="Minha foto de perfil em preto e branco com um fundo gradiente vermelho e laranja."
                 height="250"
                 width="253"
+                preload
             ></NuxtImg>
         </div>
         <div v-if="!isMobile" class="icon-scroll"></div>
