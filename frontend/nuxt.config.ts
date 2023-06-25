@@ -214,6 +214,12 @@ export default defineNuxtConfig({
         ],
     },
 
+    nitro: {
+      prerender: {
+          crawlLinks: true
+      }
+    },
+
     build: {
         transpile: ['vuetify'],
     },
