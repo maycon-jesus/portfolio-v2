@@ -42,6 +42,8 @@ const emits = defineEmits<{
 
     &-active,
     &:hover {
+        color: var(--text-accent);
+
         .bg{
             position: absolute;
             height: 100%;
@@ -50,7 +52,6 @@ const emits = defineEmits<{
             left: 0;
             z-index: -1;
             background: var(--accent);
-            color: var(--text-accent);
             border-radius: 999rem;
         }
     }
