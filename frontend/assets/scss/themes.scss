@@ -4,21 +4,48 @@ $teste: null;
 
 @each $theme in $themes{
     .theme-#{$theme}{
+        //@if $theme == dark {
+        //    // --background: #060708;
+        //    // --text-background: #fff;
+        //
+        //    --background: #393E46;
+        //    --text-background: #ffffff;
+        //    --text-medium-background: rgba(255, 255, 255,.87);
+        //
+        //    // --background2: #121417;
+        //    // --text-background2: #fff;
+        //
+        //    --background2: #222831;
+        //    --background2--80-opacity: #222831cc;
+        //    --text-background2: #fff;
+        //
+        //    --secondary: #DC2F2F;
+        //    --text-secondary: #fff;
+        //
+        //    --accent: #F5841A;
+        //    --text-accent: #000;
+        //    --accent--35-opacity: rgba(245, 132, 26,.35);
+        //    --text-accent--35-opacity: #fff;
+        //
+        //    --secondary-accent-gradient: linear-gradient(to right, var(--secondary), var(--accent));
+        //    --text-secondary-accent-gradient: #fff;
+        //}
+
         @if $theme == dark {
             // --background: #060708;
             // --text-background: #fff;
 
-            --background: #393E46;
+            --background: #1e272e;
             --text-background: #ffffff;
             --text-medium-background: rgba(255, 255, 255,.87);
 
             // --background2: #121417;
             // --text-background2: #fff;
 
-            --background2: #222831;
-            --background2--80-opacity: #222831cc;
+            --background2: #28343E;
+            --background2--80-opacity: #28343Ecc;
             --text-background2: #fff;
-            
+
             --secondary: #DC2F2F;
             --text-secondary: #fff;
 
