@@ -73,7 +73,7 @@ useHead({
     {
       key: 'load-home-bg',
       rel: "preload",
-      href: "/img/home/bg2.jpg",
+      href: "/img/home/bg2.webp",
       as: "image"
     }
   ]
@@ -91,7 +91,7 @@ section {
     flex-flow: row nowrap;
     box-sizing: border-box;
     background-color: var(--background);
-    background-image: url("/img/home/bg2.jpg");
+    background-image: url("/img/home/bg2.webp");
     //background-size: 1200px;
     background-blend-mode: color-dodge;
     background-repeat: repeat;
