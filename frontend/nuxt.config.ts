@@ -136,12 +136,12 @@ export default defineNuxtConfig({
                 },
             ],
 
-            script: [
-                {
-                    src: '//code.tidio.co/7i8ttqso1dw0edjcezyvr4l5fdidp3ly.js',
-                    defer: true,
-                },
-            ],
+            // script: [
+            //     {
+            //         src: '//code.tidio.co/7i8ttqso1dw0edjcezyvr4l5fdidp3ly.js',
+            //         defer: true,
+            //     },
+            // ],
         },
     },
 
