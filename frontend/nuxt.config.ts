@@ -9,7 +9,6 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         'nuxt-icon',
         'nuxt-icons',
-        '@nuxtjs/plausible',
         'nuxt-viewport',
         'nuxt-delay-hydration',
         '@nuxt/image-edge',
@@ -168,11 +167,6 @@ export default defineNuxtConfig({
 
     imports: {
         dirs: ['./composables/**'],
-    },
-
-    plausible: {
-        domain: 'teste.mayconjesus.dev',
-        apiHost: 'https://analytics.mayconjesus.dev',
     },
 
     viewport: {
