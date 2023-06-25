@@ -4,6 +4,12 @@ import VitePluginVuetify from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
     ssr: true,
 
+    routeRules: {
+        '/**': {
+            isr: true
+        }
+    },
+
     modules: [
         '@pinia/nuxt',
         '@vueuse/nuxt',
@@ -212,12 +218,6 @@ export default defineNuxtConfig({
                 autoImport: true,
             }),
         ],
-    },
-
-    nitro: {
-      prerender: {
-          crawlLinks: true
-      }
     },
 
     build: {
