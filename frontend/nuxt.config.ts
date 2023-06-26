@@ -10,9 +10,8 @@ export default defineNuxtConfig({
         'nuxt-icon',
         'nuxt-icons',
         'nuxt-viewport',
-        'nuxt-delay-hydration',
         '@nuxt/image-edge',
-        '@nuxtjs/color-mode',
+        'nuxt-delay-hydration'
     ],
 
     css: [
@@ -31,6 +30,7 @@ export default defineNuxtConfig({
             titleTemplate: '%s - Maycon Jesus',
             htmlAttrs: {
                 lang: 'pt-br',
+                class: "theme-dark",
             },
             meta: [
                 {
@@ -186,17 +186,10 @@ export default defineNuxtConfig({
     },
 
     delayHydration: {
-        mode: 'init',
+        mode: 'init'
     },
 
     image: {},
-
-    colorMode: {
-        preference: 'dark',
-        fallback: 'dark',
-        classPrefix: 'theme-',
-        classSuffix: '',
-    },
 
     devtools: {
         enabled: false,

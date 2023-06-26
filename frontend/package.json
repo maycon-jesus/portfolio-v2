@@ -21,6 +21,7 @@
         "nuxt-icons": "^3.2.1",
         "nuxt-viewport": "^2.0.6",
         "pinia": "^2.1.4",
+        "prettier": "^2.8.8",
         "sass": "^1.63.6",
         "typescript": "^5.1.3",
         "vite-plugin-vuetify": "^1.0.2",
