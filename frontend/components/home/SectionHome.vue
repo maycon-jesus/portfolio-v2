@@ -29,10 +29,10 @@
                     icon="mdi:github"
                     :href="githubContact?.url"
                     target="_blank"
-                    >GitHub</MyButton
+                >GitHub</MyButton
                 >
                 <MyButton :to="{ name: 'contato' }"
-                    >Contato</MyButton
+                >Contato</MyButton
                 >
                 <MyButton disabled>Projetos</MyButton>
             </div>
@@ -69,14 +69,14 @@ const githubContact = contacts.find((c) => c.id === 'github');
 const isMobile = computed(() => $viewport.isLessThan('md'));
 
 useHead({
-  link: [
-    {
-      key: 'load-home-bg',
-      rel: "preload",
-      href: "/img/home/bg2.webp",
-      as: "image"
-    }
-  ]
+    link: [
+        {
+            key: 'load-home-bg',
+            rel: "preload",
+            href: "/img/home/bg2.webp",
+            as: "image"
+        }
+    ]
 })
 </script>
 

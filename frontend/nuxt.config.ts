@@ -4,19 +4,13 @@ import VitePluginVuetify from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
     ssr: true,
 
-    routeRules: {
-        '/': {
-            isr: true
-        }
-    },
-
     modules: [
         '@pinia/nuxt',
         '@vueuse/nuxt',
         'nuxt-icon',
         'nuxt-icons',
         'nuxt-viewport',
-        'nuxt-delay-hydration',
+        // 'nuxt-delay-hydration',
         '@nuxt/image-edge',
         '@nuxtjs/color-mode',
     ],
