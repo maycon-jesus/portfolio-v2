@@ -124,13 +124,8 @@ const links: {
 
 const toggleDrawer = () => (drawerIsOpen.value = !drawerIsOpen.value);
 const logoUrl = computed(() => {
-    if ($colorMode.preference === 'dark') {
-        if (menuMobile.value) return '/img/logos/maycon-jesus-small-dark.svg';
-        return '/img/logos/maycon-jesus-large-dark.svg';
-    } else {
-        if (menuMobile.value) return '/img/logos/maycon-jesus-small-light.svg';
-        return '/img/logos/maycon-jesus-large-light.svg';
-    }
+    if (menuMobile.value) return '/img/logos/maycon-jesus-small-dark.svg';
+    return '/img/logos/maycon-jesus-large-dark.svg';
 });
 </script>
 

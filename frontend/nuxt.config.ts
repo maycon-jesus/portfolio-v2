@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         'nuxt-icons',
         'nuxt-viewport',
         '@nuxt/image-edge',
-        '@nuxtjs/color-mode',
     ],
 
     css: [
@@ -30,6 +29,9 @@ export default defineNuxtConfig({
             titleTemplate: '%s - Maycon Jesus',
             htmlAttrs: {
                 lang: 'pt-br',
+            },
+            bodyAttrs: {
+                class: "theme-dark"
             },
             meta: [
                 {
@@ -185,13 +187,6 @@ export default defineNuxtConfig({
     },
 
     image: {},
-
-    colorMode: {
-        preference: 'dark',
-        fallback: 'dark',
-        classPrefix: 'theme-',
-        classSuffix: '',
-    },
 
     devtools: {
         enabled: false,
