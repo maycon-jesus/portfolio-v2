@@ -29,9 +29,7 @@ export default defineNuxtConfig({
             titleTemplate: '%s - Maycon Jesus',
             htmlAttrs: {
                 lang: 'pt-br',
-            },
-            bodyAttrs: {
-                class: "theme-dark"
+                class: "theme-dark",
             },
             meta: [
                 {
