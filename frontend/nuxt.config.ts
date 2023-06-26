@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         'nuxt-icons',
         'nuxt-viewport',
         '@nuxt/image-edge',
+        'nuxt-delay-hydration'
     ],
 
     css: [
@@ -182,6 +183,10 @@ export default defineNuxtConfig({
             mobile: 'xs',
         },
         fallbackBreakpoint: 'lg',
+    },
+
+    delayHydration: {
+        mode: 'init'
     },
 
     image: {},
