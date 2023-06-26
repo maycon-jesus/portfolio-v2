@@ -60,7 +60,7 @@
                     >
                 </div>
                 <div class="actions-bar">
-                    <MyButton :to="{ name: 'experiencia' }">Veja mais</MyButton>
+                    <MyButton :to="{ name: 'experiencia' }">Ver mais habilidades</MyButton>
                 </div>
             </div>
         </div>
