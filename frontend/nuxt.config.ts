@@ -10,7 +10,6 @@ export default defineNuxtConfig({
         'nuxt-icon',
         'nuxt-icons',
         'nuxt-viewport',
-        'nuxt-delay-hydration',
         '@nuxt/image-edge',
         '@nuxtjs/color-mode',
     ],
@@ -183,10 +182,6 @@ export default defineNuxtConfig({
             mobile: 'xs',
         },
         fallbackBreakpoint: 'lg',
-    },
-
-    delayHydration: {
-        mode: 'init',
     },
 
     image: {},
