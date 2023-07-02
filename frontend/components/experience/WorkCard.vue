@@ -57,7 +57,7 @@
     <!--    </MyIsBot>-->
     <div class='work'>
         <div class='logo'>
-            <img v-if='props.work.org.logoUrl' :src='props.work.org.logoUrl' height='48' width='48' />
+            <img v-if='props.work.org.logoUrl' :src='props.work.org.logoUrl' :alt='`Logo do(a) ${work.org.name}`' height='48' width='48' />
         </div>
         <div class='content'>
             <div>

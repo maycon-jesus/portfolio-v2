@@ -11,6 +11,7 @@
             :is="props.docsUrl ? 'a' : 'div'"
             :href="props.docsUrl"
             :target="props.docsUrl ? '_blank' : undefined"
+            :aria-label="`Abrir site oficial do(a) ${props.label}`"
         >
             <div class="icon-wrapper">
                 <nuxt-icon :name="'logos/' + props.icon" filled />
