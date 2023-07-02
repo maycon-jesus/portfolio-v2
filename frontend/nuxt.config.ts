@@ -4,6 +4,10 @@ import VitePluginVuetify from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
     ssr: true,
 
+    routeRules: {
+      '/contato': {prerender:true}
+    },
+
     modules: [
         '@pinia/nuxt',
         '@vueuse/nuxt',
