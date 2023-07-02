@@ -23,7 +23,7 @@ section {
     align-items: center;
     padding: 4rem 20px;
 
-    @media (max-width: $xs-end) {
+    @media (max-width: breakpoints.$xs-end) {
         & {
             padding: 2rem 20px;
         }
