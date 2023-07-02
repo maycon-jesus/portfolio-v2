@@ -1,35 +1,33 @@
 <template>
-    <section id="contato" :class="{ mobile: isMobile, sm: isSm, md: isMd }">
+    <section id='contato'>
         <SectionTitle
-            title="Contato"
-            description="Vamos trabalhar juntos e criar lindos websites."
+            title='Contato'
+            description='Vamos trabalhar juntos e criar lindos websites.'
         ></SectionTitle>
-        <div class="content">
-            <div class="socials">
+        <div class='content'>
+            <div class='socials'>
                 <HomeSectionContactCard
-                    v-for="(contact, index) in contacts"
-                    :key="index"
-                    :name="contact.name"
-                    :icon="contact.icon"
-                    :url="contact.url"
-                    :url-label="contact.urlLabel"
+                    v-for='(contact, index) in contacts'
+                    :key='index'
+                    :name='contact.name'
+                    :icon='contact.icon'
+                    :url='contact.url'
+                    :url-label='contact.urlLabel'
                 />
             </div>
         </div>
     </section>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 import contactsList from '~/assets/data/contacts.json';
-const contacts = contactsList;
-const { $viewport } = useNuxtApp();
 
-const isMobile = computed(() => $viewport.isLessThan('sm'));
-const isSm = computed(() => $viewport.match('sm'));
-const isMd = computed(() => $viewport.match('md'));
+const contacts = contactsList;
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
+@import 'assets/scss/breakpoints.scss';
+
 section {
     display: flex;
     flex-flow: column nowrap;
@@ -48,29 +46,36 @@ section {
             margin: 0 auto 0 auto;
             grid-template-columns: repeat(3, 1fr);
             gap: 5rem;
-        }
-    }
 
-    &.mobile {
-        padding: 2rem 20px;
-        .content {
-            margin-top: 3.5rem;
+            @media (min-width: $sm-start) and (max-width: $sm-end) {
+                & {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2.5rem;
+                }
+            }
 
-            .socials {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
+            @media (min-width: $md-start) and (max-width: $md-end) {
+                & {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3.75rem;
+                }
             }
         }
     }
 
-    &.sm .socials {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-    }
+    @media (max-width: $xs-end) {
+        & {
+            padding: 2rem 20px;
 
-    &.md .socials {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3.75rem;
+            .content {
+                margin-top: 3.5rem;
+
+                .socials {
+                    grid-template-columns: 1fr;
+                    gap: 2.5rem;
+                }
+            }
+        }
     }
 }
 </style>
