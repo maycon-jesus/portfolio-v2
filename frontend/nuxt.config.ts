@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     ssr: true,
 
     routeRules: {
-      '/contato': {prerender:true}
+      '/contato': {prerender:true},
+      '/experiencia': {prerender:true},
     },
 
     modules: [
